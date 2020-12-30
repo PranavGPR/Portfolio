@@ -1,16 +1,14 @@
 import { createGlobalStyle } from "styled-components";
 import Head from "next/head";
+import { AppProps } from "next/app";
+import { colors } from "../constants/colors";
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <link
-          rel='icon'
-          href='favicon.png'
-          sizes='16x16 28x28 32x32'
-          type='image/png'
-        />
+        <title>Pranav</title>
+        <link rel='icon' href='favicon.ico' />
         <link rel='preconnect' href='https://fonts.gstatic.com' />
         <link
           href='https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fira+Code:wght@400;500&family=Oxygen:wght@300;400;700&display=swap'
@@ -18,26 +16,33 @@ export default function App({ Component, pageProps }) {
         />
       </Head>
       <GlobalStyle />
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }
 
 const GlobalStyle = createGlobalStyle`
-html,
-body {
-  padding: 0;
+*,
+*::after,
+*::before 
+{
   margin: 0;
-  font-family: Oxygen, Helvetica Neue, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body{
+  font-family: Oxygen, Helvetica Neue, sans-serif;
+  font-size: 1.6rem;
 }
 
 a {
-  color: inherit;
+  color: ${colors.textcolor};
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
 `;
