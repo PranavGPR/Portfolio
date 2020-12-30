@@ -37,7 +37,7 @@ html {
 }
 
 body{
-  font-family: Oxygen, Helvetica Neue, sans-serif;
+  font-family: Oxygen, sans-serif;
   font-size: 1.6rem;
 }
 

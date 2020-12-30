@@ -9,12 +9,14 @@ export default function Main() {
     <Container>
       <Hero>
         <Heading>
-          <Typography variant='h5'>Hey There!</Typography>
-          <Typography variant='h1'>I'm Pranav</Typography>
-          <Typography variant='h4'>A Full Stack Developer</Typography>
+          <Typography variant='h6'>Hey There!</Typography>
+          <Typography variant='h1'>
+            I'm <Name style={{ color: `${colors.primary}` }}>Pranav</Name>
+          </Typography>
+          <Typography variant='h4'>A Full Stack Developer.</Typography>
         </Heading>
 
-        <Tag>{tagName}</Tag>
+        <Tag role='img'>{tagName}</Tag>
       </Hero>
     </Container>
   );
@@ -32,7 +34,8 @@ const Hero = styled.div`
 `;
 
 const Heading = styled.div`
-  margin: 0 10rem;
+  margin-left: 12rem;
+  line-height: 6.5rem;
 `;
 
 const Tag = styled.div`
@@ -40,6 +43,22 @@ const Tag = styled.div`
   bottom: 4rem;
   right: 11rem;
   font-family: Dancing Script, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
   font-size: 16rem;
   opacity: 0.1;
+`;
+
+const Name = styled.span`
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7rem;
+    left: calc(0% + 0.5rem);
+    width: calc(100% - 1rem);
+    border: 2px solid ${colors.primary};
+    background-color: ${colors.primary};
+    border-radius: 10px;
+  }
 `;

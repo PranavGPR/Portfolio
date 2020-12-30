@@ -49,12 +49,14 @@ export default function Typography({ variant, children, style }: Props) {
 }
 
 const Brand = styled.h1`
-  font-family: "Niconne", sans-serif;
+  position: absolute;
+  bottom: 4rem;
+  right: 11rem;
+  font-family: Dancing Script, sans-serif;
   font-weight: 300;
   letter-spacing: 0.05rem;
-  font-size: 5rem;
-  color: white;
-  display: inline-block;
+  font-size: 16rem;
+  opacity: 0.1;
 `;
 
 const Heading1 = styled.h1`
