@@ -1,0 +1,45 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  background-color: $color-primarybg;
+  z-index: 100;
+  box-shadow: 0px 4px 10px rgba($color-primary, 1);
+
+  &__items {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  &__list {
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    &:not(:last-child) {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 1rem;
+        left: calc(100% + 3rem);
+        min-width: calc(100%);
+        border: 1px solid $color-primary;
+        background-color: $color-primary;
+        border-radius: 10px;
+        @media only screen and (width: 100%) {
+        }
+      }
+    }
+  }
+}

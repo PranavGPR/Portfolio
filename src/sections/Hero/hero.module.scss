@@ -1,0 +1,43 @@
+@import "../../styles/variables.scss";
+
+.hero {
+  &__container {
+    height: 100vh;
+    background-color: $color-primarybg;
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 120rem) {
+      width: 90%;
+    }
+  }
+
+  &__heading {
+    line-height: 6.5rem;
+  }
+
+  &__tag {
+    position: absolute;
+    bottom: 4rem;
+    right: 11rem;
+    font-family: "Dancing Script", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    font-size: 16rem;
+    opacity: 0.1;
+  }
+
+  &__name {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 7rem;
+      left: calc(0% + 0.5rem);
+      width: calc(100% - 1rem);
+      border: 2px solid $color-primary;
+      background-color: $color-primary;
+      border-radius: 10px;
+    }
+  }
+}
