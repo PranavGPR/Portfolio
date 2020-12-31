@@ -5,7 +5,7 @@ const tagName = "< GPR />";
 
 export default function Hero() {
   return (
-    <div className={styles.hero__container}>
+    <section className={styles.hero__container}>
       <div className={styles.hero__heading}>
         <Typography variant='h5'>Hey There!</Typography>
         <Typography variant='h1'>
@@ -16,6 +16,6 @@ export default function Hero() {
       <div className={styles.hero__tag} role='img'>
         {tagName}
       </div>
-    </div>
+    </section>
   );
 }

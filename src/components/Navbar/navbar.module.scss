@@ -11,7 +11,7 @@
   justify-content: center;
   background-color: $color-primarybg;
   z-index: 100;
-  box-shadow: 0px 4px 10px rgba($color-primary, 1);
+  box-shadow: 0px 0px 10px rgba($color-primary, 1);
 
   &__items {
     width: 50%;
@@ -27,19 +27,25 @@
     font-size: 1.5rem;
     font-weight: 700;
     position: relative;
-    &:not(:last-child) {
-      &::before {
-        content: "";
-        position: absolute;
-        top: 1rem;
-        left: calc(100% + 3rem);
-        min-width: calc(100%);
-        border: 1px solid $color-primary;
-        background-color: $color-primary;
-        border-radius: 10px;
-        @media only screen and (width: 100%) {
-        }
-      }
+  }
+
+  &__line {
+    content: "";
+    display: block;
+    height: 2px;
+    min-width: 7%;
+    margin: 0px auto;
+    background-color: $color-primary;
+    border-radius: 10px;
+    @media only screen and (max-width: 450px) {
+      min-width: 4%;
+    }
+    @media only screen and (max-width: 400px) {
+      min-width: 2%;
+    }
+    @media only screen and (max-width: 350px) {
+      min-width: 1%;
+      margin: 0;
     }
   }
 }

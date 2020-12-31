@@ -1,10 +1,11 @@
+import { CSSProperties } from "react";
 import styles from "./typography.module.scss";
 
 type Props = {
-  variant: any;
-  style?: any;
+  variant: string;
+  style?: CSSProperties;
   children: any;
-  className?: any;
+  className?: string;
 };
 
 export default function Typography({
@@ -59,16 +60,6 @@ export default function Typography({
         <h6 style={style} className={styles.h6}>
           {children}
         </h6>
-      );
-      break;
-
-    case "heading":
-      typography = (
-        <div className={styles.headingPrimaryOuter}>
-          <h2 style={style} className={styles.headingPrimary}>
-            {children}
-          </h2>
-        </div>
       );
       break;
 

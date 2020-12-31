@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "brands";
+  src: url("./fonts/brands.eot?w8ka9m");
+  src: url("./fonts/brands.eot?w8ka9m#iefix") format("embedded-opentype"),
+    url("./fonts/brands.ttf?w8ka9m") format("truetype"),
+    url("./fonts/brands.woff?w8ka9m") format("woff"),
+    url("./fonts/brands.svg?w8ka9m#brands") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "brands" !important;
+  // speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 4rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  text-align: center;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jee-3 .path1:before {
+  content: "\e903";
+  color: rgb(85, 130, 160);
+}
+.icon-jee-3 .path2:before {
+  content: "\e909";
+  margin-left: -0.7373046875em;
+  color: rgb(246, 151, 49);
+}
+.icon-jee-3 .path3:before {
+  content: "\e918";
+  margin-left: -0.7373046875em;
+  color: rgb(85, 130, 160);
+}
+.icon-jee-3 .path4:before {
+  content: "\e919";
+  margin-left: -0.7373046875em;
+  color: rgb(246, 151, 49);
+}
+.icon-jee-3 .path5:before {
+  content: "\e91a";
+  margin-left: -0.7373046875em;
+  color: rgb(85, 130, 160);
+}
+.icon-sequelize .path1:before {
+  content: "\e91b";
+  color: rgb(47, 64, 106);
+}
+.icon-sequelize .path2:before {
+  content: "\e91c";
+  margin-left: -0.865234375em;
+  color: rgb(35, 121, 189);
+}
+.icon-sequelize .path3:before {
+  content: "\e91d";
+  margin-left: -0.865234375em;
+  color: rgb(3, 175, 239);
+}
+.icon-sequelize .path4:before {
+  content: "\e91e";
+  margin-left: -0.865234375em;
+  color: rgb(47, 64, 106);
+}
+.icon-sequelize .path5:before {
+  content: "\e91f";
+  margin-left: -0.865234375em;
+  color: rgb(35, 121, 189);
+}
+.icon-sequelize .path6:before {
+  content: "\e920";
+  margin-left: -0.865234375em;
+  color: rgb(3, 175, 239);
+}
+.icon-sequelize .path7:before {
+  content: "\e921";
+  margin-left: -0.865234375em;
+  color: rgb(47, 64, 106);
+}
+.icon-sequelize .path8:before {
+  content: "\e922";
+  margin-left: -0.865234375em;
+  color: rgb(35, 121, 189);
+}
+.icon-sequelize .path9:before {
+  content: "\e923";
+  margin-left: -0.865234375em;
+  color: rgb(3, 175, 239);
+}
+.icon-sequelize .path10:before {
+  content: "\e924";
+  margin-left: -0.865234375em;
+  color: rgb(47, 64, 106);
+}
+.icon-sequelize .path11:before {
+  content: "\e925";
+  margin-left: -0.865234375em;
+  color: rgb(35, 121, 189);
+}
+.icon-sequelize .path12:before {
+  content: "\e926";
+  margin-left: -0.865234375em;
+  color: rgb(3, 175, 239);
+}
+.icon-sequelize .path13:before {
+  content: "\e927";
+  margin-left: -0.865234375em;
+  color: rgb(47, 64, 106);
+}
+.icon-sequelize .path14:before {
+  content: "\e928";
+  margin-left: -0.865234375em;
+  color: rgb(35, 121, 189);
+}
+.icon-sequelize .path15:before {
+  content: "\e929";
+  margin-left: -0.865234375em;
+  color: rgb(3, 175, 239);
+}
+.icon-sequelize .path16:before {
+  content: "\e92a";
+  margin-left: -0.865234375em;
+  color: rgb(47, 64, 106);
+}
+.icon-sequelize .path17:before {
+  content: "\e92b";
+  margin-left: -0.865234375em;
+  color: rgb(35, 121, 189);
+}
+.icon-sequelize .path18:before {
+  content: "\e92c";
+  margin-left: -0.865234375em;
+  color: rgb(3, 175, 239);
+}
+.icon-sequelize .path19:before {
+  content: "\e92d";
+  margin-left: -0.865234375em;
+  color: rgb(47, 64, 106);
+}
+.icon-sequelize .path20:before {
+  content: "\e92e";
+  margin-left: -0.865234375em;
+  color: rgb(35, 121, 189);
+}
+.icon-sequelize .path21:before {
+  content: "\e92f";
+  margin-left: -0.865234375em;
+  color: rgb(3, 175, 239);
+}
+.icon-sequelize .path22:before {
+  content: "\e930";
+  margin-left: -0.865234375em;
+  color: rgb(47, 64, 106);
+}
+.icon-sequelize .path23:before {
+  content: "\e931";
+  margin-left: -0.865234375em;
+  color: rgb(35, 121, 189);
+}
+.icon-sequelize .path24:before {
+  content: "\e932";
+  margin-left: -0.865234375em;
+  color: rgb(3, 175, 239);
+}
+.icon-sequelize .path25:before {
+  content: "\e933";
+  margin-left: -0.865234375em;
+  color: rgb(47, 64, 106);
+}
+.icon-sequelize .path26:before {
+  content: "\e934";
+  margin-left: -0.865234375em;
+  color: rgb(35, 121, 189);
+}
+.icon-sequelize .path27:before {
+  content: "\e935";
+  margin-left: -0.865234375em;
+  color: rgb(3, 175, 239);
+}
+.icon-apollo-graphql-compact:before {
+  content: "\e936";
+}
+.icon-c:before {
+  content: "\e937";
+  color: #03599c;
+}
+.icon-sass:before {
+  content: "\e938";
+  color: #cf649a;
+}
+.icon-figma-1 .path1:before {
+  content: "\e912";
+  color: rgb(10, 207, 131);
+}
+.icon-figma-1 .path2:before {
+  content: "\e913";
+  margin-left: -0.6669921875em;
+  color: rgb(162, 89, 255);
+}
+.icon-figma-1 .path3:before {
+  content: "\e914";
+  margin-left: -0.6669921875em;
+  color: rgb(242, 78, 30);
+}
+.icon-figma-1 .path4:before {
+  content: "\e915";
+  margin-left: -0.6669921875em;
+  color: rgb(255, 114, 98);
+}
+.icon-figma-1 .path5:before {
+  content: "\e916";
+  margin-left: -0.6669921875em;
+  color: rgb(26, 188, 254);
+}
+.icon-express:before {
+  content: "\e917";
+}
+.icon-css3:before {
+  content: "\e902";
+  color: #1572b6;
+}
+.icon-firebase:before {
+  content: "\e90a";
+  color: #ffca28;
+}
+.icon-html5:before {
+  content: "\e904";
+  color: #e34f26;
+}
+.icon-mongodb:before {
+  content: "\e90b";
+  color: #47a248;
+}
+.icon-mysql:before {
+  content: "\e911";
+  color: #4479a1;
+}
+.icon-oracle:before {
+  content: "\e90d";
+  color: #f80000;
+}
+.icon-postgresql:before {
+  content: "\e90e";
+  color: #336791;
+}
+.icon-python:before {
+  content: "\e90f";
+  color: #fff;
+}
+.icon-redux:before {
+  content: "\e910";
+  color: #764abc;
+}
+.icon-cplusplus:before {
+  content: "\e905";
+  color: #00599c;
+}
+.icon-graphql:before {
+  content: "\e906";
+  color: #e10098;
+}
+.icon-node-dot-js:before {
+  content: "\e907";
+  color: #393;
+}
+.icon-next-dot-js:before {
+  content: "\e908";
+}
+.icon-javascript:before {
+  content: "\e90c";
+  color: #f7df1e;
+}
+.icon-typescript:before {
+  content: "\e901";
+  color: #007acc;
+}
+.icon-react:before {
+  content: "\e900";
+  color: #61dafb;
+}
