@@ -55,8 +55,8 @@
       display: block;
       filter: brightness(90%);
       cursor: grab;
-
       margin: 0 2rem 2rem 0;
+      transition: filter 0.2s;
 
       @include respond(phone) {
         margin: 0 2rem 3rem 2rem;
@@ -65,8 +65,6 @@
       @include respond(touchscreen) {
         filter: none;
       }
-
-      transition: filter 0.2s;
 
       &:hover {
         filter: brightness(110%) drop-shadow(0 0 1rem $color-primary);

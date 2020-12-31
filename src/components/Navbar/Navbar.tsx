@@ -11,8 +11,6 @@ export default function Navbar() {
         <li className={styles.nav__list}>Skills</li>
         <div className={styles.nav__line} />
         <li className={styles.nav__list}>Projects</li>
-        <div className={styles.nav__line} />
-        <li className={styles.nav__list}>Contact</li>
       </ul>
     </nav>
   );

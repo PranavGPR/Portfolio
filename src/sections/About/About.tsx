@@ -51,7 +51,7 @@ export default function About() {
             <span className='path5'></span>
           </span>
 
-          <span className='icon icon-python'></span>
+          <span className='social social-python-5'></span>
 
           <span className='icon icon-redux'></span>
 

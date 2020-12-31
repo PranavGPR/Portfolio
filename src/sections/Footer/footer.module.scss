@@ -1,9 +1,39 @@
+@import "../../styles/variables.scss";
+
 .footer {
   &__container {
     margin-top: 5rem;
-    padding: 5rem;
+    padding: 2rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+  }
+  &__content {
+    text-align: center;
+    line-height: 2;
+    font-weight: 700;
+    font-size: 1.5rem;
+    &_name {
+      color: $color-primary;
+    }
+  }
+  &__social_icons {
+    margin-bottom: 2rem;
+    & > a {
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+      span {
+        font-size: 2.5rem;
+        color: $color-white;
+        transition: all 0.2s;
+
+        &:hover {
+          cursor: pointer;
+          color: $color-primary;
+        }
+      }
+    }
   }
 }

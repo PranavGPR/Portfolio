@@ -11,7 +11,9 @@ export default function Hero() {
         <Typography variant='h1'>
           I'm <span className={styles.hero__name}>Pranav</span>
         </Typography>
-        <Typography variant='h4'>A Full Stack Developer.</Typography>
+        <Typography variant='h4' style={{ color: "gray" }}>
+          A Full Stack Developer.
+        </Typography>
       </div>
       <div className={styles.hero__tag} role='img'>
         {tagName}

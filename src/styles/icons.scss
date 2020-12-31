@@ -13,7 +13,6 @@
 .icon {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "brands" !important;
-  // speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -231,7 +230,7 @@
 }
 .icon-firebase:before {
   content: "\e90a";
-  color: #ffca28;
+  color: #ffc24a;
 }
 .icon-html5:before {
   content: "\e904";
