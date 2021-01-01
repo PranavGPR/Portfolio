@@ -1,4 +1,3 @@
-import { Button } from "..";
 import styles from "./navbar.module.scss";
 
 export default function Navbar() {
@@ -6,27 +5,19 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <ul className={styles.nav__items}>
         <li className={styles.nav__list}>
-          <Button href='#hero' target_blank={false}>
-            Intro
-          </Button>
+          <a href='#hero'>Intro</a>
         </li>
         <div className={styles.nav__line} />
         <li className={styles.nav__list}>
-          <Button href='#about' target_blank={false}>
-            About
-          </Button>
+          <a href='#about'>About</a>
         </li>
         <div className={styles.nav__line} />
         <li className={styles.nav__list}>
-          <Button href='#skills' target_blank={false}>
-            Skills
-          </Button>
+          <a href='#skills'>Skills</a>
         </li>
         <div className={styles.nav__line} />
         <li className={styles.nav__list}>
-          <Button href='#projects' target_blank={false}>
-            Projects
-          </Button>
+          <a href='#projects'>Projects</a>
         </li>
       </ul>
     </nav>
