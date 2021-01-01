@@ -1,48 +1,55 @@
-import { Typography, Accordion } from "../../components";
+import { Typography, Accordion, Button } from "../../components";
 import styles from "./about.module.scss";
 import education from "./data";
 
 export default function About() {
   return (
-    <section className={styles.about}>
-      <div className={styles.about__container}>
-        <div style={{ marginBottom: "5rem" }}>
-          <Typography variant='h3'>About Me</Typography>
-          <div className={styles.about__gridContainer}>
-            <div className={styles.about__content}>
-              <Typography variant='description'>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat veritatis explicabo asperiores sint perspiciatis,
-                incidunt sit, esse aliquid libero atque eos. Quam voluptates
-                reiciendis animi officiis sunt modi velit quas. Lorem ipsum,
-                dolor sit amet consectetur adipisicing elit. Ad sunt deserunt
-                quasi libero molestiae, iusto dolorum. Distinctio eos iusto
-                neque minima voluptate maxime tempora fugiat? Accusamus,
-                distinctio. Nihil, hic labore. Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit. Sed perferendis, praesentium
-                eveniet blanditiis nihil, delectus, quidem qui ab consectetur
-                velit incidunt dicta culpa voluptas explicabo consequuntur
-                reprehenderit natus nesciunt veritatis.
-              </Typography>
-            </div>
+    <>
+      <section className={styles.about} id='about'>
+        <div className={styles.about__container}>
+          <div style={{ marginBottom: "5rem" }}>
+            <Typography variant='h3'>About Me</Typography>
+            <div className={styles.about__gridContainer}>
+              <div className={styles.about__content}>
+                <Typography variant='description'>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Repellat veritatis explicabo asperiores sint perspiciatis,
+                  incidunt sit, esse aliquid libero atque eos. Quam voluptates
+                  reiciendis animi officiis sunt modi velit quas. Lorem ipsum,
+                  dolor sit amet consectetur adipisicing elit. Ad sunt deserunt
+                  quasi libero molestiae, iusto dolorum. Distinctio eos iusto
+                  neque minima voluptate maxime tempora fugiat? Accusamus,
+                  distinctio. Nihil, hic labore. Lorem ipsum dolor sit, amet
+                  consectetur adipisicing elit. Sed perferendis, praesentium
+                  eveniet blanditiis nihil, delectus, quidem qui ab consectetur
+                  velit incidunt dicta culpa voluptas explicabo consequuntur
+                  reprehenderit natus nesciunt veritatis.
+                </Typography>
+                <Button href='/' style={{ width: "15%", marginTop: "3rem" }}>
+                  Resume
+                </Button>
+              </div>
 
-            <figure className={styles.about__imageContainer}>
-              <img className={styles.about__image} src='/Me.png' />
-            </figure>
+              <figure className={styles.about__imageContainer}>
+                <img className={styles.about__image} src='/Me.png' />
+              </figure>
+            </div>
+          </div>
+          <div className={styles.education}>
+            <Typography variant='h4' style={{ marginBottom: "3rem" }}>
+              Education
+            </Typography>
+            {education.map((value, index) => {
+              return (
+                <Accordion key={index} title={value.title} arrow={true}>
+                  {value.description}
+                </Accordion>
+              );
+            })}
           </div>
         </div>
-        <div className={styles.education}>
-          <Typography variant='h4' style={{ marginBottom: "3rem" }}>
-            Education
-          </Typography>
-          {education.map((value, index) => {
-            return (
-              <Accordion key={index} title={value.title} arrow={true}>
-                {value.description}
-              </Accordion>
-            );
-          })}
-        </div>
+      </section>
+      <section id='skills' className={styles.skills}>
         <div>
           <Typography variant='h3' style={{ marginBottom: "3rem" }}>
             Skills
@@ -135,7 +142,7 @@ export default function About() {
             <span className='icon icon-cplusplus'></span>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

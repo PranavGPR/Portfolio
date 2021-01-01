@@ -1,15 +1,26 @@
-import { ReactChild } from "react";
+import { CSSProperties, ReactChild } from "react";
 import styles from "./button.module.scss";
 
 interface ButtonProps {
   href: string;
   children: ReactChild;
+  style?: CSSProperties;
+  target_blank?: boolean;
 }
 
-export default function Button({ href, children }: ButtonProps) {
+export default function Button({
+  href,
+  children,
+  style,
+  target_blank,
+}: ButtonProps) {
   return (
-    <div className={styles.button}>
-      <a href={href} className={styles.button__content}>
+    <div className={styles.button} style={style}>
+      <a
+        href={href}
+        target={target_blank ? "_blank" : "_self"}
+        className={styles.button__content}
+      >
         {children}
       </a>
     </div>

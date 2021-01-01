@@ -5,7 +5,7 @@ const tagName = "< GPR />";
 
 export default function Hero() {
   return (
-    <section className={styles.hero__container}>
+    <section className={styles.hero__container} id='hero'>
       <div className={styles.hero__heading}>
         <Typography variant='h5'>Hey There!</Typography>
         <Typography variant='h1'>

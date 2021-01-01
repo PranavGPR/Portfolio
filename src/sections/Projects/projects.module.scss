@@ -1,0 +1,6 @@
+@import "../../styles/mixins.scss";
+
+.projects {
+  @include marginate;
+  padding-top: 10rem;
+}

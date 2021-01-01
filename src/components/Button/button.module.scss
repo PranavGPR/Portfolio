@@ -11,20 +11,22 @@
     height: 100%;
     width: 3px;
     border-radius: 2px;
-    background-color: $color-primary;
+    background-color: rgba($color-primary, 0.5);
+    box-shadow: 0 0 1rem transparent;
     transform: scaleY(0);
     transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
-      background-color 0.1s;
+      background-color 0.1s, box-shadow 0.5s;
   }
 
   &:hover::before,
   &--active::before {
     transform: scaleY(1);
     width: 100%;
+    box-shadow: 0 0 1rem rgba($color-primary, 0.5);
   }
 
   &:active::before {
-    background-color: $color-textcolor;
+    background-color: $color-primary;
   }
 
   &__content:link,

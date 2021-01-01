@@ -10,7 +10,7 @@ const extras = [
   {
     title: "class-scheduler",
     type: "Contributed Project",
-    tech: "ReactJS  Sass",
+    tech: "NPM (or) Yarn",
     repo: "/",
     link: "/",
     description: "A zero dependency class time-table manager.",
@@ -21,7 +21,8 @@ const extras = [
     tech: "HTML  CSS",
     repo: "/",
     link: "/",
-    description: "A Landing Site designed and developed for Rahul Dairy Farm.",
+    description:
+      "A Landing Site designed and developed for Rahul's Dairy Farm.",
   },
   {
     title: "Savory",
@@ -29,7 +30,7 @@ const extras = [
     tech: "NextJS  Express  MongoDB",
     repo: "/",
     link: "/",
-    description: "An online Food-Ordering website which is under development.",
+    description: "An Online Food-Ordering website which is under development.",
   },
   {
     title: "EndPolio",
@@ -37,7 +38,8 @@ const extras = [
     tech: "HTML  CSS  BootStrap",
     repo: "/",
     link: "/",
-    description: "A Static site designed for my College's Rotaract Club.",
+    description:
+      "A Static site designed and built for my College's Rotaract Club.",
   },
 ];
 

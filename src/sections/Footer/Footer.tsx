@@ -4,6 +4,9 @@ import styles from "./footer.module.scss";
 export default function Footer() {
   return (
     <footer className={styles.footer__container}>
+      <Typography variant='h6' style={{ marginBottom: "2rem" }}>
+        Contact me on
+      </Typography>
       <div className={styles.footer__social_icons}>
         <a target='_blank' href='mailto:pranav.gnanasekar23@gmail.com'>
           <span className='social social-mail'></span>

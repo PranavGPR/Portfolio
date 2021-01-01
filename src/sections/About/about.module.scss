@@ -2,7 +2,7 @@
 @import "../../styles/mixins.scss";
 
 .about {
-  padding: 10rem 0;
+  padding: 10rem 0 0;
 
   @media only screen and (max-width: 120rem) {
     width: 100%;
@@ -21,6 +21,9 @@
     margin-top: 3rem;
     grid-column: 1/2;
     grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__image {
@@ -43,6 +46,8 @@
 }
 
 .skills {
+  @include marginate;
+  padding-top: 10rem;
   &__icons {
     display: flex;
     flex-wrap: wrap;

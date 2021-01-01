@@ -1,24 +1,60 @@
+import { ReactChild } from "react";
+import { Button, Typography } from "..";
 import styles from "./projectcard.module.scss";
 
-export default function ProjectCard() {
+interface ProjectProps {
+  image: string;
+  type: string;
+  title: string;
+  children: ReactChild;
+  stack: string[];
+  link: string;
+  repo: string;
+}
+
+const Tech = ({ value }) => {
+  return <span className={styles.project__techItem}>{value}</span>;
+};
+
+export default function ProjectCard({
+  image,
+  type,
+  title,
+  children,
+  stack,
+  link,
+  repo,
+}: ProjectProps) {
   return (
     <div className={styles.project}>
       <figure className={styles.project__picture}>
-        <img
-          src='aubit.png'
-          alt='aubit'
-          className={styles.project__picture_img}
-        />
+        <img src={image} alt='aubit' className={styles.project__picture_img} />
         <figcaption className={styles.project__picture_caption}>
-          <a href='/' target='_blank' rel='noopener noreferrer'>
+          <a href={repo} target='_blank'>
             Repo
           </a>
-          <a href='/' target='_blank' rel='noopener noreferrer'>
+          <a href={link} target='_blank'>
             Link
           </a>
         </figcaption>
       </figure>
-      <div className={styles.project__description}>Hello</div>
+      <div className={styles.project__details}>
+        <span className={styles.project__sub_heading}>{type}</span>
+        <Typography variant='h4' style={{ margin: "2rem 0" }}>
+          {title}
+        </Typography>
+        <Typography
+          variant='description'
+          className={styles.project__description}
+        >
+          {children}
+        </Typography>
+        <div className={styles.project__techs}>
+          {stack.map((value, index) => {
+            return <Tech value={value} key={index} />;
+          })}
+        </div>
+      </div>
     </div>
   );
 }

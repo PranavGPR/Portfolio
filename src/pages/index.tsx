@@ -7,7 +7,7 @@ export default function Main() {
       <Navbar />
       <Hero />
       <About />
-      {/* <Projects /> */}
+      <Projects />
       <OtherProjects />
       <Footer />
     </>
