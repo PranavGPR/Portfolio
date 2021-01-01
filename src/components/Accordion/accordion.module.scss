@@ -1,0 +1,74 @@
+@import "../../styles/variables.scss";
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid rgba($color-white, 0.09);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($color-white, 0.1);
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .arrow {
+    margin-right: 1.5rem;
+    font-size: 2rem;
+    transition: all 0.3s;
+  }
+
+  .title {
+    flex: 1 1 50%;
+    font-size: 1.8rem;
+    letter-spacing: 1.25px;
+  }
+  .type,
+  .tech {
+    flex: 1 1 25%;
+    font-family: $font-code;
+    font-size: 1.2rem;
+  }
+  .type {
+    text-align: left;
+  }
+
+  .tech {
+    text-align: right;
+  }
+
+  .extra {
+    max-height: 20rem;
+    overflow: hidden;
+    transition: all 0.3s;
+
+    .description {
+      padding: 4rem 0 1rem;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+
+    .actions {
+      display: flex;
+
+      & > a {
+        margin-right: 2rem;
+        font-size: 1.4rem;
+        font-weight: 700;
+        padding: 1rem 2rem;
+        border-radius: 2px;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: $color-primary;
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
-import { Typography } from "../../components";
+import { Typography, Accordion } from "../../components";
 import styles from "./about.module.scss";
+import education from "./data";
 
 export default function About() {
   return (
@@ -119,6 +120,18 @@ export default function About() {
 
           <span className='icon icon-cplusplus'></span>
         </div>
+      </div>
+      <div className={styles.education}>
+        <Typography variant='h3' style={{ marginBottom: "3rem" }}>
+          Education
+        </Typography>
+        {education.map((value, index) => {
+          return (
+            <Accordion key={index} title={value.title}>
+              {value.description}
+            </Accordion>
+          );
+        })}
       </div>
     </section>
   );
