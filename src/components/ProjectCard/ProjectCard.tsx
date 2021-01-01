@@ -1,5 +1,7 @@
 import { ReactChild } from "react";
-import { Button, Typography } from "..";
+import { FaExternalLinkAlt, FaLink } from "react-icons/fa";
+
+import { Typography } from "..";
 import styles from "./projectcard.module.scss";
 
 interface ProjectProps {
@@ -30,12 +32,18 @@ export default function ProjectCard({
       <figure className={styles.project__picture}>
         <img src={image} alt='aubit' className={styles.project__picture_img} />
         <figcaption className={styles.project__picture_caption}>
-          <a href={repo} target='_blank'>
-            Repo
-          </a>
-          <a href={link} target='_blank'>
-            Link
-          </a>
+          {repo && (
+            <a href={repo} target='_blank'>
+              <FaExternalLinkAlt />
+              Repo
+            </a>
+          )}
+          {link && (
+            <a href={link} target='_blank'>
+              <FaLink />
+              Link
+            </a>
+          )}
         </figcaption>
       </figure>
       <div className={styles.project__details}>

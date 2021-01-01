@@ -5,7 +5,6 @@ const data = [
     title: "AUBIT - Unofficial Site",
     stack: ["React", "Sass"],
     link: "/",
-    repo: "/",
     description:
       "The unofficial website of University College of Engineering, BIT Campus, Tiruchirappalli. The website is still under development and will be approved upon completion to be the official website. Built with React.",
   },

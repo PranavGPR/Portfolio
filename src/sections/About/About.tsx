@@ -25,7 +25,16 @@ export default function About() {
                   velit incidunt dicta culpa voluptas explicabo consequuntur
                   reprehenderit natus nesciunt veritatis.
                 </Typography>
-                <Button href='/' style={{ width: "15%", marginTop: "3rem" }}>
+                <Button
+                  href='https://drive.google.com/file/d/1ARJgjGmTWoCtwBvW1srWz7uaBen5YGkO/view?usp=sharing'
+                  style={{
+                    width: "15%",
+                    marginTop: "3rem",
+                    border: "2px solid #007acc",
+                    borderRadius: "5px",
+                  }}
+                  target_blank={true}
+                >
                   Resume
                 </Button>
               </div>
@@ -65,35 +74,25 @@ export default function About() {
 
             <span className='icon icon-typescript'></span>
 
-            <span className='icon icon-jee-3'>
-              <span className='path1'></span>
-              <span className='path2'></span>
-              <span className='path3'></span>
-              <span className='path4'></span>
-              <span className='path5'></span>
-            </span>
-
-            <span className='social social-python-5'></span>
+            <span className='icon icon-react'></span>
 
             <span className='icon icon-redux'></span>
+
+            <span className='icon icon-next-dot-js'></span>
+
+            <span className='icon icon-apollo-graphql-compact'></span>
+
+            <span className='icon icon-graphql'></span>
 
             <span className='icon icon-node-dot-js'></span>
 
             <span className='icon icon-express'></span>
-
-            <span className='icon icon-react'></span>
-
-            <span className='icon icon-next-dot-js'></span>
 
             <span className='icon icon-mongodb'></span>
 
             <span className='icon icon-firebase'></span>
 
             <span className='icon icon-mysql'></span>
-
-            <span className='icon icon-oracle'></span>
-
-            <span className='icon icon-postgresql'></span>
 
             <span className='icon icon-sequelize'>
               <span className='path1'></span>
@@ -125,9 +124,9 @@ export default function About() {
               <span className='path27'></span>
             </span>
 
-            <span className='icon icon-apollo-graphql-compact'></span>
+            <span className='icon icon-oracle'></span>
 
-            <span className='icon icon-graphql'></span>
+            <span className='icon icon-postgresql'></span>
 
             <span className='icon icon-figma-1'>
               <span className='path1'></span>
@@ -140,6 +139,16 @@ export default function About() {
             <span className='icon icon-c'></span>
 
             <span className='icon icon-cplusplus'></span>
+
+            <span className='icon icon-jee-3'>
+              <span className='path1'></span>
+              <span className='path2'></span>
+              <span className='path3'></span>
+              <span className='path4'></span>
+              <span className='path5'></span>
+            </span>
+
+            <span className='social social-python-5'></span>
           </div>
         </div>
       </section>

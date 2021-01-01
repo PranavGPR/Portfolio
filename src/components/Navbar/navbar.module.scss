@@ -13,6 +13,23 @@
   z-index: 100;
   box-shadow: 0px 0px 10px rgba($color-primary, 1);
 
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 15rem;
+    width: 7rem;
+    height: 7rem;
+    cursor: pointer;
+
+    &:hover {
+      & > path {
+        &:not(:first-child) {
+          fill: $color-primary;
+        }
+      }
+    }
+  }
+
   &__items {
     width: 50%;
     display: flex;

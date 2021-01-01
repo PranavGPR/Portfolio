@@ -1,23 +1,48 @@
+import Link from "next/link";
 import styles from "./navbar.module.scss";
 
 export default function Navbar() {
   return (
     <nav className={styles.nav}>
+      <Link href='/'>
+        <svg
+          className={styles.nav__logo}
+          width='200'
+          height='150'
+          viewBox='0 0 200 150'
+          fill='none'
+          xmlns='http://www.w3.org/2000/svg'
+        >
+          <path d='M0 75V0H100H200V75V150H100H0V75Z' fill='#061018' />
+          <path
+            d='M84.04 129.714C84.3285 128.6 88.5114 117.319 93.1271 104.784C99.6179 87.5143 102.358 81.8041 104.522 80.9685C106.397 80.2721 107.695 80.5507 107.984 81.5256C108.128 82.3612 105.387 90.7176 101.926 100.188C97.3101 112.444 93.7041 119.269 89.3769 124.561C86.0593 128.6 83.6073 130.828 84.04 129.714Z'
+            fill='#FDFDFD'
+          />
+          <path
+            d='M83.1742 92.8077L84.0397 71.9168L79.1355 65.6495C76.395 62.1677 72.3562 57.0146 70.1926 54.2291L66.1539 48.9367L72.789 49.7724C76.395 50.3295 79.424 50.3295 79.424 49.9116C79.424 49.4938 76.2507 45.4549 72.212 40.9982C68.3175 36.5414 65 32.5025 65 32.0847C65 31.1098 82.0203 33.1989 93.5595 35.8451C118.369 41.2767 127.889 50.3295 122.696 63.4211C120.965 68.0171 113.897 72.0561 104.378 74.1451L97.0213 75.8164L91.5402 90.5794C82.0203 116.484 82.1646 116.484 83.1742 92.8077ZM107.695 64.8139C117.071 60.4964 115.34 53.3935 103.512 48.2404C99.3291 46.5691 94.1365 44.6193 91.9729 44.2015C87.3572 43.2265 87.3572 42.948 93.848 52.4186C100.339 61.7499 100.195 61.6106 96.1559 60.6357C91.8286 59.6608 91.3959 60.9142 94.8577 64.5353C97.7425 67.5993 101.348 67.7386 107.695 64.8139Z'
+            fill='#FDFDFD'
+          />
+          <path
+            d='M127.889 46.9835C126.735 42.3875 119.09 36.9558 109.282 33.6133C101.06 30.8278 78.9913 26.6496 72.3562 26.6496H68.606L72.3562 23.0285C76.1065 19.4074 76.2507 19.4074 87.5014 21.0787C115.917 25.1176 131.783 31.942 134.812 41.4125C135.389 43.3624 134.668 45.1729 132.216 47.4013L128.754 50.4653L127.889 46.9835Z'
+            fill='#FDFDFD'
+          />
+        </svg>
+      </Link>
       <ul className={styles.nav__items}>
         <li className={styles.nav__list}>
-          <a href='#hero'>Intro</a>
+          <Link href='/'>Intro</Link>
         </li>
         <div className={styles.nav__line} />
         <li className={styles.nav__list}>
-          <a href='#about'>About</a>
+          <Link href='#about'>About</Link>
         </li>
         <div className={styles.nav__line} />
         <li className={styles.nav__list}>
-          <a href='#skills'>Skills</a>
+          <Link href='#skills'>Skills</Link>
         </li>
         <div className={styles.nav__line} />
         <li className={styles.nav__list}>
-          <a href='#projects'>Projects</a>
+          <Link href='#projects'>Projects</Link>
         </li>
       </ul>
     </nav>
