@@ -1,7 +1,7 @@
 import { ReactChild, useState, useEffect, useRef } from "react";
 import { FaAngleRight } from "react-icons/fa";
 
-import { Typography } from "..";
+import { Button, Typography } from "..";
 import styles from "./accordion.module.scss";
 
 interface AccordionProps {
@@ -11,6 +11,7 @@ interface AccordionProps {
   children: ReactChild;
   link?: string;
   repo?: string;
+  arrow: boolean;
 }
 
 export default function Accordion({
@@ -20,6 +21,7 @@ export default function Accordion({
   children,
   link,
   repo,
+  arrow,
 }: AccordionProps) {
   const [click, setClick] = useState<boolean>(false);
   const additional = useRef(null);
@@ -45,10 +47,12 @@ export default function Accordion({
       }}
     >
       <div className={styles.main}>
-        <FaAngleRight
-          className={styles.arrow}
-          style={!click ? {} : { transform: "rotate(90deg)" }}
-        />
+        {arrow && (
+          <FaAngleRight
+            className={styles.arrow}
+            style={!click ? {} : { transform: "rotate(90deg)" }}
+          />
+        )}
         <span className={styles.title}>{title}</span>
         <span className={styles.type}>{type}</span>
         <span className={styles.tech}>{tech}</span>
@@ -58,16 +62,8 @@ export default function Accordion({
           {children}
         </Typography>
         <div className={styles.actions}>
-          {repo && (
-            <a href={repo} className={styles.button}>
-              Repo
-            </a>
-          )}
-          {link && (
-            <a href={link} className={styles.button}>
-              Link
-            </a>
-          )}
+          {repo && <Button href={repo}>Repo</Button>}
+          {link && <Button href={link}>Link</Button>}
         </div>
       </div>
     </div>

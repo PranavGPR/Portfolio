@@ -12,10 +12,12 @@
   &__content {
     text-align: center;
     line-height: 2;
-    font-weight: 700;
+    letter-spacing: 0.5px;
     font-size: 1.5rem;
     &_name {
       color: $color-primary;
+      font-weight: 700;
+      font-size: 1.7rem;
     }
   }
   &__social_icons {

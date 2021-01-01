@@ -29,7 +29,7 @@ export default function Footer() {
       </div>
 
       <Typography variant='description' className={styles.footer__content}>
-        Copyright &#169; 2021 by <br />
+        Copyright &#169; 2021 <br />
         <span className={styles.footer__content_name}>PranavGPR</span>
       </Typography>
     </footer>

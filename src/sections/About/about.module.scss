@@ -2,12 +2,13 @@
 @import "../../styles/mixins.scss";
 
 .about {
-  &__container {
-    margin: 10rem auto;
+  padding: 10rem 0;
 
-    @media only screen and (max-width: 120rem) {
-      width: 100%;
-    }
+  @media only screen and (max-width: 120rem) {
+    width: 100%;
+  }
+  &__container {
+    @include marginate;
   }
 
   &__gridContainer {
@@ -71,4 +72,8 @@
       }
     }
   }
+}
+
+.education {
+  margin-bottom: 5rem;
 }

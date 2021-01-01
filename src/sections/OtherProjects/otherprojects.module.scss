@@ -1,0 +1,18 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.otherprs {
+  padding: 10rem 0;
+
+  &__container {
+    @include marginate;
+  }
+
+  &__accordion {
+    &_container {
+      border-radius: 3px;
+      background-color: $color-black;
+      box-shadow: 0 0.1rem 4px rgba($color-primary, 0.3);
+    }
+  }
+}

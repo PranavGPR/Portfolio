@@ -1,5 +1,4 @@
 @import "./variables.scss";
-@import "./mixins.scss";
 
 *,
 *::after,
@@ -32,8 +31,6 @@ html {
 }
 
 body {
-  @include marginate;
-
   background-color: $color-primarybg;
   color: $color-textcolor;
 }
