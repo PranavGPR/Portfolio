@@ -11,6 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Pranav</title>
 
         {/* Metadata */}
+        <link rel='preconnect' />
         <meta
           name='keywords'
           content='pranav, gpr, realgpr, GPR, REALGPR, PRANAV, pranavgpr, PranavGPR, PRANAVGPR, PRANAVgpr'
