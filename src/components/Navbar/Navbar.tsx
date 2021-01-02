@@ -23,6 +23,9 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <Link href='/'>
         <motion.svg
+          drag
+          dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
+          dragElastic={0.2}
           className={styles.nav__logo}
           width='40'
           height='70'
