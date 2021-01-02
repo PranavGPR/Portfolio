@@ -9,6 +9,21 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Pranav</title>
+
+        {/* Metadata */}
+        <meta
+          name='keywords'
+          content='pranav, gpr, realgpr, GPR, REALGPR, PRANAV, pranavgpr, PranavGPR, PRANAVGPR, PRANAVgpr'
+        />
+        <meta
+          name='description'
+          content='Hi, I am Pranav. I am a Full Stack Developer. I built web apps using React and NodeJS'
+        />
+        <meta name='author' content='Pranav' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+
+        {/* Favicon */}
         <link
           rel='apple-touch-icon'
           sizes='180x180'
