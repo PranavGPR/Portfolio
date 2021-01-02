@@ -20,6 +20,19 @@
     bottom: 4rem;
     right: 11rem;
     opacity: 0.1;
+
+    @include respond(tab-lan) {
+      width: 60%;
+    }
+
+    @include respond(tab-port) {
+      width: 70%;
+    }
+
+    @include respond(phone) {
+      width: 90%;
+      right: 10%;
+    }
   }
 
   &__name {
@@ -34,6 +47,10 @@
       background-color: $color-primary;
       border-radius: 10px;
       box-shadow: 0 0 1rem rgba($color-primary, 1);
+
+      @include respond(phone) {
+        top: 6rem;
+      }
     }
   }
 }

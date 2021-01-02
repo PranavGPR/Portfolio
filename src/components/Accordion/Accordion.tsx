@@ -62,8 +62,30 @@ export default function Accordion({
           {children}
         </Typography>
         <div className={styles.actions}>
-          {repo && <Button href={repo}>Repo</Button>}
-          {link && <Button href={link}>Link</Button>}
+          {repo && (
+            <Button
+              href={repo}
+              style={{
+                margin: "1rem 3rem 0 0",
+                border: "2px solid #007acc",
+                borderRadius: "5px",
+              }}
+            >
+              Repo
+            </Button>
+          )}
+          {link && (
+            <Button
+              href={link}
+              style={{
+                margin: "1rem 3rem 0 0",
+                border: "2px solid #007acc",
+                borderRadius: "5px",
+              }}
+            >
+              Link
+            </Button>
+          )}
         </div>
       </div>
     </div>

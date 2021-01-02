@@ -12,18 +12,20 @@ export default function About() {
             <div className={styles.about__gridContainer}>
               <div className={styles.about__content}>
                 <Typography variant='description'>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Repellat veritatis explicabo asperiores sint perspiciatis,
-                  incidunt sit, esse aliquid libero atque eos. Quam voluptates
-                  reiciendis animi officiis sunt modi velit quas. Lorem ipsum,
-                  dolor sit amet consectetur adipisicing elit. Ad sunt deserunt
-                  quasi libero molestiae, iusto dolorum. Distinctio eos iusto
-                  neque minima voluptate maxime tempora fugiat? Accusamus,
-                  distinctio. Nihil, hic labore. Lorem ipsum dolor sit, amet
-                  consectetur adipisicing elit. Sed perferendis, praesentium
-                  eveniet blanditiis nihil, delectus, quidem qui ab consectetur
-                  velit incidunt dicta culpa voluptas explicabo consequuntur
-                  reprehenderit natus nesciunt veritatis.
+                  Hi, I'm Pranav. I'm a Web Developer and a Gamer 👨🏻‍💻 from
+                  Madurai.
+                  <br />
+                  <br />
+                  I'm currently pursuing my under graduation 👨🏻‍🎓 in Computer
+                  Science and Engineering at University College of Engineering -
+                  BIT Campus, Trichy. I love to create awesome sites with great
+                  stylings. I love to code with my friends ❤. Eating and Cooking
+                  👨🏻‍🍳 are my favorites other than coding.
+                  <br />
+                  <br />
+                  My hobby is to play games. I love to spend hours and hours in
+                  playing them. I also have an idea to become a game developer
+                  💪🏻.
                 </Typography>
                 <Button
                   href='https://drive.google.com/file/d/1ARJgjGmTWoCtwBvW1srWz7uaBen5YGkO/view?usp=sharing'
