@@ -1,32 +1,30 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
+@import "../../styles/animations.scss";
 
 .nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2.5rem 0;
+  padding: 3rem 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: $color-primarybg;
   z-index: 100;
   box-shadow: 0px 0px 10px rgba($color-primary, 1);
 
   &__logo {
     position: absolute;
-    top: 0;
-    left: 15rem;
-    width: 7rem;
-    height: 7rem;
+    top: 1.5rem;
+    left: 12.5rem;
+    width: 5rem;
+    height: 5rem;
     cursor: pointer;
 
-    &:hover {
-      & > path {
-        &:not(:first-child) {
-          fill: $color-primary;
-        }
-      }
+    & > path {
+      fill: $color-textcolor;
     }
   }
 

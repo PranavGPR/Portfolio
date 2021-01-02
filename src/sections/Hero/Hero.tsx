@@ -1,8 +1,6 @@
 import styles from "./hero.module.scss";
 import { Typography } from "../../components";
 
-const tagName = "< GPR />";
-
 export default function Hero() {
   return (
     <section className={styles.hero__container} id='hero'>

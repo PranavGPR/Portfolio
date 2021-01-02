@@ -1,0 +1,19 @@
+@import "../styles/variables.scss";
+@import "../styles/animations.scss";
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__svg {
+    path {
+      stroke: $color-primary;
+      stroke-width: 2;
+      animation-name: fillColor;
+      animation-duration: 3.4s;
+      animation-delay: 3.2s;
+    }
+  }
+}

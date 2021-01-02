@@ -28,7 +28,6 @@ export default function About() {
                 <Button
                   href='https://drive.google.com/file/d/1ARJgjGmTWoCtwBvW1srWz7uaBen5YGkO/view?usp=sharing'
                   style={{
-                    width: "15%",
                     marginTop: "3rem",
                     border: "2px solid #007acc",
                     borderRadius: "5px",

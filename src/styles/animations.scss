@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 @keyframes projectOverview {
   0% {
     transform: translateY(0);
@@ -9,5 +11,19 @@
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes fillColor {
+  0% {
+    fill: $color-textcolor;
+    fill-opacity: 0;
+    scale: 1;
+  }
+
+  100% {
+    fill: $color-textcolor;
+    fill-opacity: 1;
+    scale: 2;
   }
 }
