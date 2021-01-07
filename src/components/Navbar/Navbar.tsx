@@ -1,7 +1,8 @@
+import { useRef } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+
 import styles from "./navbar.module.scss";
-import { useRef } from "react";
 
 const pathVariants = {
   hidden: {
