@@ -1,6 +1,6 @@
 # PortFolio
 
-This is my portfolio built with Nextjs. If you want, you can fork this repository and modify the changes you like. For any issues, kindly open an issue in this repository so that I can clear it. If you want to contribute to this repository, feel free to open a pull request, I'll see them and merge it.
+This is my portfolio built with NextJS. You can fork this repository and modify the changes you like. For any issues, kindly open an issue in this repository so that I can clear it. If you want to contribute to this repository, feel free to open a pull request, I'll see them and merge it.
 
 ### To run locally on your system,
 
