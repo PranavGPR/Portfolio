@@ -16,7 +16,7 @@ const data = [
     link: "https://7days50projects.vercel.app/",
     repo: "https://github.com/benxene/7days-50projects",
     description:
-      "This is a derivative of 50days50projects which is a course consisting of 50 mini projects produced by Brad Traversy and Florin Pop. Me and my colleages designed and built it with Next JS, Styled Components and TypeScript",
+      "This is a derivative of 50days50projects which is a course consisting of 50 mini projects produced by Brad Traversy and Florin Pop. Me and my colleages designed and built it on Next JS, Styled Components and TypeScript",
   },
   {
     image: "zosimetech.jpg",
@@ -25,7 +25,7 @@ const data = [
     stack: ["HTML", "CSS"],
     link: "https://zosimetech.tk/",
     description:
-      "The official landing site of Zosime Tech built with the power of HTML, CSS.",
+      "The official landing site of Zosime Tech built with the power of HTML and CSS.",
   },
   {
     image: "fullycart.jpg",

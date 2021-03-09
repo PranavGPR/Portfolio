@@ -4,9 +4,9 @@ import projects from "./data";
 
 export default function Projects() {
   return (
-    <section className={styles.projects} id='projects'>
+    <section className={styles.projects} id="projects">
       <Typography
-        variant='h3'
+        variant="h3"
         style={{ textAlign: "center", marginBottom: "5rem" }}
       >
         My Projects
@@ -31,5 +31,3 @@ export default function Projects() {
     </section>
   );
 }
-
-// { image, type, title, children, stack, link, repo }
