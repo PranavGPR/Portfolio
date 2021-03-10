@@ -18,9 +18,9 @@ export default function About() {
                   <br />
                   I'm currently pursuing my under graduation 👨🏻‍🎓 on Computer
                   Science and Engineering in University College of Engineering -
-                  BIT Campus, Trichy. I love to create awesome sites with great
-                  stylings. I love to code with my friends ❤. Eating and Cooking
-                  👨🏻‍🍳 are my favorites other than coding.
+                  BIT Campus, Trichy. I love to create awesome sites with
+                  beautiful CSS and SVG's. I love to code with my friends ❤.
+                  Eating and Cooking 👨🏻‍🍳 are my favorites other than coding.
                   <br />
                   <br />
                   My hobby is to play games. I love to spend hours and hours in
