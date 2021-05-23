@@ -4,12 +4,12 @@ import styles from "./about.module.scss";
 import education from "./data";
 
 export default function About() {
-  const [data, setData] = useState({});
+  const [data, setData] = useState("");
 
   const getUser = async () => {
     const res = await fetch("https://api.github.com/users/pranavgpr");
     const data = await res.json();
-    setData(data);
+    setData(data.avatar_url);
   };
 
   useEffect(() => {
@@ -54,7 +54,7 @@ export default function About() {
               </div>
 
               <figure className={styles.about__imageContainer}>
-                <img className={styles.about__image} src={data.avatar_url} />
+                <img className={styles.about__image} src={data} />
               </figure>
             </div>
           </div>
