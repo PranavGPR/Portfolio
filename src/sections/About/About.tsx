@@ -1,8 +1,21 @@
+import { useEffect, useState } from "react";
 import { Typography, Accordion, Button } from "../../components";
 import styles from "./about.module.scss";
 import education from "./data";
 
 export default function About() {
+  const [data, setData] = useState({});
+
+  const getUser = async () => {
+    const res = await fetch("https://api.github.com/users/pranavgpr");
+    const data = await res.json();
+    setData(data);
+  };
+
+  useEffect(() => {
+    getUser();
+  }, []);
+
   return (
     <>
       <section className={styles.about} id='about'>
@@ -41,7 +54,7 @@ export default function About() {
               </div>
 
               <figure className={styles.about__imageContainer}>
-                <img className={styles.about__image} src='/Me.jpg' />
+                <img className={styles.about__image} src={data.avatar_url} />
               </figure>
             </div>
           </div>
