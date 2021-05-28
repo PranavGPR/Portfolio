@@ -10,8 +10,8 @@ const extras = [
   {
     title: "Savory",
     type: "Featured Project",
-    tech: "ReactJS NodeJS Express MongoDB",
-    repo: "https://github.com/PranavGPR/Savory-frontend",
+    tech: "ReactJS  StyledComponents",
+    repo: "https://github.com/PranavGPR/savory",
     description: "An Online Food-Ordering website.",
   },
   {
