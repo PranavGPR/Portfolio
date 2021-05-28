@@ -7,9 +7,13 @@ export default function About() {
   const [data, setData] = useState("");
 
   const getUser = async () => {
-    const res = await fetch("https://api.github.com/users/pranavgpr");
-    const data = await res.json();
-    setData(data.avatar_url);
+    try {
+      const res = await fetch("https://api.github.com/users/pranavgpr");
+      const data = await res.json();
+      setData(data.avatar_url);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   useEffect(() => {

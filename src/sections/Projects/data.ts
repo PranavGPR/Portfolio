@@ -1,5 +1,25 @@
 const data = [
   {
+    image: "bonafide-generator.jpg",
+    type: "Collaborated Project",
+    title: "Bonafide Generator",
+    stack: ["ReactJS", "Styled Components", "@react-pdf/renderer"],
+    link: "https://bonafide-generator.netlify.app/",
+    repo: "https://github.com/sank2000/bonafide-generator",
+    description:
+      "A MERN Stack application for a student to obtain an online bonafide certificate.",
+  },
+  {
+    image: "infinite-loop-club.jpg",
+    type: "Collaborated Project",
+    title: "Infinite Loop Club Website",
+    stack: ["ReactJS", "Styled Components"],
+    link: "https://infinite-loop-club.netlify.app/",
+    repo: "https://github.com/Infinite-Loop-Club/club-site",
+    description:
+      "The official site of Infinite loop club of Anna University, Trichy.",
+  },
+  {
     image: "aubit.jpg",
     type: "Collaborated Project",
     title: "AUBIT - Unofficial Site",
@@ -16,16 +36,7 @@ const data = [
     link: "https://7days50projects.vercel.app/",
     repo: "https://github.com/benxene/7days-50projects",
     description:
-      "This is a derivative of 50days50projects which is a course consisting of 50 mini projects produced by Brad Traversy and Florin Pop. Me and my colleages designed and built it on Next JS, Styled Components and TypeScript",
-  },
-  {
-    image: "zosimetech.jpg",
-    type: "Collaborated Project",
-    title: "Zosime Tech - Home Page",
-    stack: ["HTML", "CSS"],
-    link: "https://zosimetech.tk/",
-    description:
-      "The official landing site of Zosime Tech built with the power of HTML and CSS.",
+      "This is a derivative of 50days50projects which is a course consisting of 50 mini projects produced by Brad Traversy and Florin Pop. Me and my colleages designed and built it on Next JS, Styled Components and TypeScript.",
   },
   {
     image: "fullycart.jpg",
@@ -36,6 +47,15 @@ const data = [
     repo: "https://github.com/PranavGPR/FullyCart",
     description:
       "An E-Commerce Clothes shopping site built on React and Redux for FrontEnd, Express for Server and MongoDB for Database.",
+  },
+  {
+    image: "zosimetech.jpg",
+    type: "Collaborated Project",
+    title: "Zosime Tech - Home Page",
+    stack: ["HTML", "CSS"],
+    link: "https://zosimetech.tk/",
+    description:
+      "The official landing site of Zosime Tech built with the power of HTML and CSS.",
   },
 ];
 
