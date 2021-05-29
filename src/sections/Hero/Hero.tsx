@@ -16,7 +16,7 @@ export default function Hero() {
           I'm <span className={styles.hero__name}>Pranav</span>
         </Typography>
         <Typography variant='h4' style={{ color: "gray" }}>
-          A Full Stack Developer.
+          Full Stack Developer.
         </Typography>
       </div>
       <svg
