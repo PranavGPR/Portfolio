@@ -29,8 +29,8 @@ export default function About() {
             <div className={styles.about__gridContainer}>
               <div className={styles.about__content}>
                 <Typography variant='description'>
-                  Hi, I'm Pranav. I'm a Web Developer and a Gamer 👨🏻‍💻 from
-                  Madurai.
+                  Hi, I'm Pranav. I'm a Full Stack Web Developer and a Gamer 👨🏻‍💻
+                  from Madurai, Tamil Nadu.
                   <br />
                   <br />
                   I'm currently pursuing my under graduation 👨🏻‍🎓 on Computer
@@ -40,9 +40,9 @@ export default function About() {
                   Eating and Cooking 👨🏻‍🍳 are my favorites other than coding.
                   <br />
                   <br />
-                  My hobby is to play games. I love to spend hours and hours in
-                  playing games. I also have an idea to become a game developer
-                  💪🏻.
+                  My hobby is to play console games. I love to spend hours and
+                  hours in playing console and PC games. I also have an idea to
+                  become a game developer 💪🏻.
                 </Typography>
                 <Button
                   href='https://drive.google.com/file/d/1t5eq798tXWKJacddPnFXsRkPLq4OePOo/view?usp=sharing'
@@ -88,7 +88,11 @@ export default function About() {
 
             <span className='icon icon-sass'></span>
 
+            <span className='icon icon-styled-components'></span>
+
             <span className='icon icon-javascript'></span>
+
+            <span className='icon icon-jquery'></span>
 
             <span className='icon icon-typescript'></span>
 
@@ -98,7 +102,7 @@ export default function About() {
 
             <span className='icon icon-next-dot-js'></span>
 
-            <span className='icon icon-apollo-graphql-compact'></span>
+            <span className='icon icon-apollo'></span>
 
             <span className='icon icon-graphql'></span>
 
@@ -109,6 +113,8 @@ export default function About() {
             <span className='icon icon-mongodb'></span>
 
             <span className='icon icon-firebase'></span>
+
+            <span className='icon icon-postgresql'></span>
 
             <span className='icon icon-mysql'></span>
 
@@ -142,23 +148,13 @@ export default function About() {
               <span className='path27'></span>
             </span>
 
-            <span className='icon icon-oracle'></span>
-
-            <span className='icon icon-postgresql'></span>
-
-            <span className='icon icon-figma-1'>
-              <span className='path1'></span>
-              <span className='path2'></span>
-              <span className='path3'></span>
-              <span className='path4'></span>
-              <span className='path5'></span>
-            </span>
+            <span className='icon icon-docker'></span>
 
             <span className='icon icon-c'></span>
 
             <span className='icon icon-cplusplus'></span>
 
-            <span className='icon icon-jee-3'>
+            <span className='icon icon-java'>
               <span className='path1'></span>
               <span className='path2'></span>
               <span className='path3'></span>
@@ -166,7 +162,17 @@ export default function About() {
               <span className='path5'></span>
             </span>
 
-            <span className='social social-python-5'></span>
+            <span className='icon icon-python'></span>
+
+            <span className='icon icon-git'></span>
+
+            <span className='icon icon-figma'>
+              <span className='path1'></span>
+              <span className='path2'></span>
+              <span className='path3'></span>
+              <span className='path4'></span>
+              <span className='path5'></span>
+            </span>
           </div>
         </div>
       </section>
