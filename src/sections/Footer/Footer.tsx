@@ -20,20 +20,17 @@ export default function Footer() {
         >
           <span className='social social-linkedin'></span>
         </a>
-        <a target='_blank' href='https://twitter.com/pranavgpr'>
-          <span className='social social-twitter'></span>
-        </a>
-        <a target='_blank' href='https://www.instagram.com/i_m_mystrix/'>
+        <a target='_blank' href='https://www.instagram.com/pranavgpr/'>
           <span className='social social-instagram'></span>
         </a>
-        <a target='_blank' href='https://t.me/PranavGPR'>
+        <a target='_blank' href='https://t.me/GPR'>
           <span className='social social-telegram'></span>
         </a>
       </div>
 
       <Typography variant='description' className={styles.footer__content}>
-        Copyright &#169; 2021 <br />
-        <span className={styles.footer__content_name}>PranavGPR</span>
+        Copyright &#169; 2020 - 2021 <br />
+        <span className={styles.footer__content_name}>Pranav Gnanasekar</span>
       </Typography>
     </footer>
   );
