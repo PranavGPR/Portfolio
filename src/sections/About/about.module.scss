@@ -18,7 +18,7 @@
     grid-gap: 2rem;
     justify-content: space-between;
 
-    @include respond(phone) {
+    @include respond(phone-large) {
       grid-template-columns: 1fr;
       grid-template-rows: min-content 100%;
     }
@@ -53,9 +53,14 @@
       height: 100%;
       text-align: center;
 
-      @include respond(phone) {
+      @include respond(phone-large) {
         max-height: 30rem;
       }
+    }
+
+    @include respond(tab-lan) {
+      min-height: 30rem;
+      max-height: 60%;
     }
 
     @include respond(tab-port) {
@@ -63,7 +68,7 @@
       max-height: 50%;
     }
 
-    @include respond(phone) {
+    @include respond(phone-large) {
       max-height: 100%;
       position: static;
       transform: none;
