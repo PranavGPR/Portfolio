@@ -1,3 +1,5 @@
+import { Fade } from "react-reveal";
+
 import styles from "./projects.module.scss";
 import { Typography, ProjectCard } from "components";
 import projects from "./data";
@@ -5,12 +7,14 @@ import projects from "./data";
 export default function Projects() {
   return (
     <section className={styles.projects} id='projects'>
-      <Typography
-        variant='h3'
-        style={{ textAlign: "center", marginBottom: "5rem" }}
-      >
-        My Projects
-      </Typography>
+      <Fade bottom cascade>
+        <Typography
+          variant='h3'
+          style={{ textAlign: "center", marginBottom: "5rem" }}
+        >
+          My Projects
+        </Typography>
+      </Fade>
       {projects.map(
         ({ image, type, title, stack, link, repo, description }, index) => {
           return (

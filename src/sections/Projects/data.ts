@@ -20,15 +20,6 @@ const data = [
       "The official site of Infinite loop club of Anna University, Trichy.",
   },
   {
-    image: "aubit.jpg",
-    type: "Collaborated Project",
-    title: "AUBIT - Unofficial Site",
-    stack: ["React", "Sass"],
-    link: "https://aubit.netlify.app",
-    description:
-      "The unofficial website of University College of Engineering, BIT Campus, Tiruchirappalli. The website is still under development and will be approved upon completion to be the official website. Built with React.",
-  },
-  {
     image: "7days50projects.jpg",
     type: "Collaborated Project",
     title: "7Days - 50Projects",

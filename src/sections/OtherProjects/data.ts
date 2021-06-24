@@ -30,6 +30,14 @@ const extras = [
     description: "An E-Commerce shopping site built with my colleagues.",
   },
   {
+    title: "AUBIT - Unofficial Site",
+    type: "Contributed Project",
+    tech: "React Sass",
+    link: "https://aubit.netlify.app",
+    description:
+      "The unofficial website of University College of Engineering, BIT Campus, Tiruchirappalli. The website is still under development and will be approved upon completion to be the official website. Built with React.",
+  },
+  {
     title: "class-scheduler",
     type: "Contributed Project",
     tech: "TypeScript JavaScript",

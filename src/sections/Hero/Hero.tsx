@@ -1,24 +1,29 @@
+import { Fade } from "react-reveal";
+
 import styles from "./hero.module.scss";
 import { Typography } from "components";
 
 export default function Hero() {
   return (
     <section className={styles.hero__container} id='hero'>
-      <div className={styles.hero__heading}>
-        <Typography variant='h5'>
-          Hey There!{" "}
-          <img
-            src='https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif'
-            width='25px'
-          ></img>
-        </Typography>
-        <Typography variant='h1'>
-          I'm <span className={styles.hero__name}>Pranav</span>
-        </Typography>
-        <Typography variant='h4' style={{ color: "gray" }}>
-          Full Stack Developer.
-        </Typography>
-      </div>
+      <Fade bottom cascade>
+        <div className={styles.hero__heading}>
+          <Typography variant='h5'>
+            Hey There!{" "}
+            <img
+              src='https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif'
+              width='25px'
+            ></img>
+          </Typography>
+          <Typography variant='h1'>
+            I'm <span className={styles.hero__name}>Pranav</span>
+          </Typography>
+          <Typography variant='h4' style={{ color: "gray" }}>
+            Full Stack Developer.
+          </Typography>
+        </div>
+      </Fade>
+
       <svg
         className={styles.hero__tag}
         width='958'
