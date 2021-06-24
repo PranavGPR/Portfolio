@@ -87,41 +87,73 @@ export default function About() {
               Skills
             </Typography>
             <div className={styles.skills__icons}>
-              <span className='icon icon-html5'></span>
+              <span className='icon icon-html5'>
+                <span className='tooltip'>HTML</span>
+              </span>
 
-              <span className='icon icon-css3'></span>
+              <span className='icon icon-css3'>
+                <span className='tooltip'>CSS</span>
+              </span>
 
-              <span className='icon icon-sass'></span>
+              <span className='icon icon-sass'>
+                <span className='tooltip'>Sass</span>
+              </span>
 
-              <span className='icon icon-styled-components'></span>
+              <span className='icon icon-styled-components'>
+                <span className='tooltip'>Styled Components</span>
+              </span>
 
-              <span className='icon icon-javascript'></span>
+              <span className='icon icon-javascript'>
+                <span className='tooltip'>Javascript</span>
+              </span>
 
-              <span className='icon icon-jquery'></span>
+              <span className='icon icon-typescript'>
+                <span className='tooltip'>TypeScript</span>
+              </span>
 
-              <span className='icon icon-typescript'></span>
+              <span className='icon icon-react'>
+                <span className='tooltip'>React</span>
+              </span>
 
-              <span className='icon icon-react'></span>
+              <span className='icon icon-redux'>
+                <span className='tooltip'>Redux</span>
+              </span>
 
-              <span className='icon icon-redux'></span>
+              <span className='icon icon-next-dot-js'>
+                <span className='tooltip'>NextJS</span>
+              </span>
 
-              <span className='icon icon-next-dot-js'></span>
+              <span className='icon icon-apollo'>
+                <span className='tooltip'>Apollo</span>
+              </span>
 
-              <span className='icon icon-apollo'></span>
+              <span className='icon icon-graphql'>
+                <span className='tooltip'>GraphQL</span>
+              </span>
 
-              <span className='icon icon-graphql'></span>
+              <span className='icon icon-node-dot-js'>
+                <span className='tooltip'>NodeJS</span>
+              </span>
 
-              <span className='icon icon-node-dot-js'></span>
+              <span className='icon icon-express'>
+                <span className='tooltip'>Express</span>
+              </span>
 
-              <span className='icon icon-express'></span>
+              <span className='icon icon-mongodb'>
+                <span className='tooltip'>MongoDB</span>
+              </span>
 
-              <span className='icon icon-mongodb'></span>
+              <span className='icon icon-firebase'>
+                <span className='tooltip'>Firebase</span>
+              </span>
 
-              <span className='icon icon-firebase'></span>
+              <span className='icon icon-postgresql'>
+                <span className='tooltip'>PostgreSQL</span>
+              </span>
 
-              <span className='icon icon-postgresql'></span>
-
-              <span className='icon icon-mysql'></span>
+              <span className='icon icon-mysql'>
+                <span className='tooltip'>MySQL</span>
+              </span>
 
               <span className='icon icon-sequelize'>
                 <span className='path1'></span>
@@ -151,13 +183,20 @@ export default function About() {
                 <span className='path25'></span>
                 <span className='path26'></span>
                 <span className='path27'></span>
+                <span className='tooltip'>Sequalize</span>
               </span>
 
-              <span className='icon icon-docker'></span>
+              <span className='icon icon-docker'>
+                <span className='tooltip'>Docker</span>
+              </span>
 
-              <span className='icon icon-c'></span>
+              <span className='icon icon-c'>
+                <span className='tooltip'>C</span>
+              </span>
 
-              <span className='icon icon-cplusplus'></span>
+              <span className='icon icon-cplusplus'>
+                <span className='tooltip'>C++</span>
+              </span>
 
               <span className='icon icon-java'>
                 <span className='path1'></span>
@@ -165,11 +204,16 @@ export default function About() {
                 <span className='path3'></span>
                 <span className='path4'></span>
                 <span className='path5'></span>
+                <span className='tooltip'>Java</span>
               </span>
 
-              <span className='icon icon-python'></span>
+              <span className='icon icon-python'>
+                <span className='tooltip'>Python</span>
+              </span>
 
-              <span className='icon icon-git'></span>
+              <span className='icon icon-git'>
+                <span className='tooltip'>Git</span>
+              </span>
 
               <span className='icon icon-figma'>
                 <span className='path1'></span>
@@ -177,6 +221,7 @@ export default function About() {
                 <span className='path3'></span>
                 <span className='path4'></span>
                 <span className='path5'></span>
+                <span className='tooltip'>Figma</span>
               </span>
             </div>
           </div>

@@ -83,6 +83,7 @@
 .skills {
   @include marginate;
   padding-top: 10rem;
+
   &__icons {
     display: flex;
     flex-wrap: wrap;
@@ -97,7 +98,7 @@
       filter: brightness(90%);
       cursor: grab;
       margin: 0 2rem 2rem 0;
-      transition: filter 0.2s;
+      transition: all 0.2s;
 
       @include respond(phone) {
         margin: 0 2rem 3rem 2rem;
