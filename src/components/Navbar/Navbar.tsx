@@ -66,7 +66,10 @@ export default function Navbar() {
         </label>
 
         <ul className={styles.nav__items}>
-          <li className={styles.nav__list}>
+          <li
+            className={styles.nav__list}
+            onClick={() => window.scrollTo(0, 0)}
+          >
             <Link href='/'>Intro</Link>
           </li>
           <div className={styles.nav__line} />
