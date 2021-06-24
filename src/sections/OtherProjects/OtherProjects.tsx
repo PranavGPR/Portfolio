@@ -1,4 +1,4 @@
-import { Accordion, Typography } from "../../components";
+import { Accordion, Typography } from "components";
 import styles from "./otherprojects.module.scss";
 import otherprs from "./data";
 

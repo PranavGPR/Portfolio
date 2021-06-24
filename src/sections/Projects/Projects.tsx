@@ -1,12 +1,12 @@
 import styles from "./projects.module.scss";
-import { Typography, ProjectCard } from "../../components";
+import { Typography, ProjectCard } from "components";
 import projects from "./data";
 
 export default function Projects() {
   return (
-    <section className={styles.projects} id="projects">
+    <section className={styles.projects} id='projects'>
       <Typography
-        variant="h3"
+        variant='h3'
         style={{ textAlign: "center", marginBottom: "5rem" }}
       >
         My Projects

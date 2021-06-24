@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Typography, Accordion, Button } from "../../components";
+import { Typography, Accordion, Button } from "components";
 import styles from "./about.module.scss";
 import education from "./data";
 

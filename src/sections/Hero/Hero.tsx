@@ -1,5 +1,5 @@
 import styles from "./hero.module.scss";
-import { Typography } from "../../components";
+import { Typography } from "components";
 
 export default function Hero() {
   return (
