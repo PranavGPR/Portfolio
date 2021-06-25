@@ -26,50 +26,58 @@ export default function About() {
     <>
       <section className={styles.about} id='about'>
         <div className={styles.about__container}>
-          <div style={{ marginBottom: "5rem" }}>
+          <div style={{ marginBottom: "5rem", width: "100%" }}>
             <Fade bottom cascade>
               <Typography variant='h3'>About Me</Typography>
             </Fade>
             <div className={styles.about__gridContainer}>
               <div className={styles.about__content}>
-                <Typography variant='description'>
-                  Hi, I'm Pranav. I'm a Full Stack Web Developer and a Gamer 👨🏻‍💻
-                  from Madurai, Tamil Nadu.
-                  <br />
-                  <br />
-                  I'm currently pursuing my under graduation 👨🏻‍🎓 on Computer
-                  Science and Engineering in University College of Engineering -
-                  BIT Campus, Trichy. I love to create awesome sites with
-                  beautiful CSS and SVG's. I love to code with my friends ❤.
-                  Eating and Cooking 👨🏻‍🍳 are my favorites other than coding.
-                  <br />
-                  <br />
-                  My hobby is to play console games. I love to spend hours and
-                  hours in playing console and PC games. I also have an idea to
-                  become a game developer 💪🏻.
-                </Typography>
-                <Button
-                  href='https://drive.google.com/file/d/1t5eq798tXWKJacddPnFXsRkPLq4OePOo/view?usp=sharing'
-                  style={{
-                    marginTop: "3rem",
-                    border: "2px solid #007acc",
-                    borderRadius: "5px",
-                  }}
-                  target_blank={true}
-                >
-                  Resume
-                </Button>
+                <Fade bottom cascade>
+                  <Typography variant='description'>
+                    Hi, I'm Pranav. I'm a Full Stack Web Developer and a Gamer
+                    👨🏻‍💻 from Madurai, Tamil Nadu.
+                    <br />
+                    <br />
+                    I'm currently pursuing my under graduation 👨🏻‍🎓 on Computer
+                    Science and Engineering in University College of Engineering
+                    - BIT Campus, Trichy. I love to create awesome sites with
+                    beautiful CSS and SVG's. I love to code with my friends ❤.
+                    Eating and Cooking 👨🏻‍🍳 are my favorites other than coding.
+                    <br />
+                    <br />
+                    My hobby is to play console games. I love to spend hours and
+                    hours in playing console and PC games. I also have an idea
+                    to become a game developer 💪🏻.
+                  </Typography>
+                </Fade>
+                <Fade bottom cascade>
+                  <Button
+                    href='https://drive.google.com/file/d/1t5eq798tXWKJacddPnFXsRkPLq4OePOo/view?usp=sharing'
+                    style={{
+                      marginTop: "3rem",
+                      border: "2px solid #007acc",
+                      borderRadius: "5px",
+                    }}
+                    target_blank={true}
+                  >
+                    Resume
+                  </Button>
+                </Fade>
               </div>
-
-              <figure className={styles.about__imageContainer}>
-                <img className={styles.about__image} src={data} />
-              </figure>
+              <Fade bottom cascade>
+                <figure className={styles.about__imageContainer}>
+                  <img className={styles.about__image} src={data} />
+                </figure>
+              </Fade>
             </div>
           </div>
           <div className={styles.education}>
-            <Typography variant='h4' style={{ marginBottom: "3rem" }}>
-              Education
-            </Typography>
+            <Fade bottom cascade>
+              <Typography variant='h4' style={{ marginBottom: "3rem" }}>
+                Education
+              </Typography>
+            </Fade>
+
             {education.map((value, index) => {
               return (
                 <Accordion key={index} title={value.title} arrow={true}>
