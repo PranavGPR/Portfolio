@@ -18,11 +18,16 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta
           name='description'
-          content='Hi, I am Pranav. I am a Full Stack Developer. I built web apps using React and NodeJS'
+          content="Hi, I'm Pranav. I am a Full Stack Developer and UI/UX designer. I built web apps using MERN Stack and other frameworks."
         />
         <meta name='author' content='Pranav' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <meta httpEquiv='X-UA-Compatible' content='ie=edge' />
+        <meta name='robots' content='index, follow' />
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta name='language' content='English' />
+        <meta name='theme-color' content='#007acc' />
+        <meta name='msapplication-navbutton-color' content='#007acc' />
 
         {/* Favicon */}
         <link
