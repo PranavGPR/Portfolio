@@ -1,7 +1,8 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Fade } from "react-reveal";
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 
 import styles from "./navbar.module.scss";
 
@@ -20,6 +21,17 @@ const pathVariants = {
 
 export default function Navbar() {
   const check = useRef(null);
+  const [click, setClick] = useState(false);
+
+  const toggleScroll = () => {
+    if (!click) {
+      disableBodyScroll(check.current);
+      setClick(true);
+    } else {
+      enableBodyScroll(check.current);
+      setClick(false);
+    }
+  };
 
   return (
     <Fade top>
@@ -63,6 +75,7 @@ export default function Navbar() {
             type='checkbox'
             className={styles.nav__check}
             id='nav__check'
+            onClick={toggleScroll}
           />
           <label htmlFor='nav__check' className={styles.nav__toggle}>
             &nbsp;

@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <meta httpEquiv='X-UA-Compatible' content='ie=edge' />
         <meta name='robots' content='index, follow' />
-        <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
         <meta name='language' content='English' />
         <meta name='theme-color' content='#007acc' />
         <meta name='msapplication-navbutton-color' content='#007acc' />
