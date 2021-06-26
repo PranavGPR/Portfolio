@@ -21,7 +21,10 @@ export default function App({ Component, pageProps }: AppProps) {
           content="Hi, I'm Pranav. I am a Full Stack Developer and UI/UX designer. I built web apps using MERN Stack and other frameworks."
         />
         <meta name='author' content='Pranav' />
-        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <meta
+          name='viewport'
+          content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover'
+        />
         <meta httpEquiv='X-UA-Compatible' content='ie=edge' />
         <meta name='robots' content='index, follow' />
         <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
