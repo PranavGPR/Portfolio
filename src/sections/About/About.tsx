@@ -49,8 +49,7 @@ export default function About() {
                     hours in playing console and PC games. I also have an idea
                     to become a game developer 💪🏻.
                   </Typography>
-                </Fade>
-                <Fade bottom cascade>
+
                   <Button
                     href='https://drive.google.com/file/d/1t5eq798tXWKJacddPnFXsRkPLq4OePOo/view?usp=sharing'
                     style={{

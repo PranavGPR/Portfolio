@@ -10,6 +10,9 @@ export default function Footer() {
         <Typography variant='h6' style={{ marginBottom: "2rem" }}>
           Contact me on
         </Typography>
+      </Fade>
+
+      <Fade bottom cascade>
         <div className={styles.footer__social_icons}>
           <a target='_blank' href='mailto:pranav.gnanasekar23@gmail.com'>
             <span className='social social-mail'></span>
@@ -30,7 +33,9 @@ export default function Footer() {
             <span className='social social-telegram'></span>
           </a>
         </div>
+      </Fade>
 
+      <Fade bottom cascade>
         <Typography variant='description' className={styles.footer__content}>
           Copyright &#169; 2020 - 2021 <br />
           <span className={styles.footer__content_name}>Pranav Gnanasekar</span>
