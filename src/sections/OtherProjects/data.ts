@@ -10,7 +10,7 @@ const extras = [
   {
     title: "Savory",
     type: "Featured Project",
-    tech: "ReactJS  StyledComponents",
+    tech: "React  StyledComponents",
     repo: "https://github.com/PranavGPR/savory",
     description: "An Online Food-Ordering website.",
   },
@@ -25,7 +25,7 @@ const extras = [
   {
     title: "Nviktous",
     type: "Contributed Project",
-    tech: "ReactJS Sass MaterialUI",
+    tech: "React Sass MaterialUI",
     link: "https://nviktous.herokuapp.com/",
     description: "An E-Commerce shopping site built with my colleagues.",
   },

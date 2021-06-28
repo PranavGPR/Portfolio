@@ -3,7 +3,7 @@ const data = [
     image: "bonafide-generator.jpg",
     type: "Collaborated Project",
     title: "Bonafide Generator",
-    stack: ["ReactJS", "Styled Components", "@react-pdf/renderer"],
+    stack: ["React", "Styled Components", "@react-pdf/renderer"],
     link: "https://bonafide-generator.netlify.app/",
     repo: "https://github.com/sank2000/bonafide-generator",
     description:
@@ -13,7 +13,7 @@ const data = [
     image: "infinite-loop-club.jpg",
     type: "Collaborated Project",
     title: "Infinite Loop Club Website",
-    stack: ["ReactJS", "Styled Components"],
+    stack: ["React", "Styled Components"],
     link: "https://infinite-loop-club.netlify.app/",
     repo: "https://github.com/Infinite-Loop-Club/club-site",
     description:
@@ -33,7 +33,7 @@ const data = [
     image: "fullycart.jpg",
     type: "Featured Project",
     title: "FullyCart",
-    stack: ["ReactJS", "Redux", "Express", "MongoDB"],
+    stack: ["React", "Redux", "Express", "MongoDB"],
     link: "https://fullycart.herokuapp.com/",
     repo: "https://github.com/PranavGPR/FullyCart",
     description:
