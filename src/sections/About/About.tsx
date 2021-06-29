@@ -31,8 +31,8 @@ export default function About() {
               <Typography variant='h3'>About Me</Typography>
             </Fade>
             <div className={styles.about__gridContainer}>
-              <div className={styles.about__content}>
-                <Fade bottom cascade>
+              <Fade bottom cascade>
+                <div className={styles.about__content}>
                   <Typography variant='description'>
                     Hi, I'm Pranav. I'm a Full Stack Web Developer and a Gamer
                     👨🏻‍💻 from Madurai, Tamil Nadu.
@@ -61,9 +61,7 @@ export default function About() {
                   >
                     Resume
                   </Button>
-                </Fade>
-              </div>
-              <Fade bottom cascade>
+                </div>
                 <figure className={styles.about__imageContainer}>
                   <img className={styles.about__image} src={data} />
                 </figure>
