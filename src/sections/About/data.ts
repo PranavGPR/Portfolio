@@ -1,4 +1,4 @@
-const education = [
+export const education = [
   {
     title: "Tagore Vidyalayam Matriculation Higher Secondary School",
     description: "Primary and Secondary Schooling (2016) - Madurai",
@@ -13,4 +13,12 @@ const education = [
   },
 ];
 
-export default education;
+export const experience = [
+  {
+    designation: "Frontend Developer",
+    company: "App Town Technologies",
+    description:
+      "Worked as the Lead Frontend developer on a React project in App Town Technologies from January 2021 to February 2021.",
+    link: "https://apptown.in/",
+  },
+];

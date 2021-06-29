@@ -3,7 +3,7 @@ import { Fade } from "react-reveal";
 
 import { Typography, Accordion, Button } from "components";
 import styles from "./about.module.scss";
-import education from "./data";
+import { education, experience } from "./data";
 
 export default function About() {
   const [data, setData] = useState("");
@@ -68,20 +68,43 @@ export default function About() {
               </Fade>
             </div>
           </div>
+
           <div className={styles.education}>
             <Fade bottom cascade>
               <Typography variant='h4' style={{ marginBottom: "3rem" }}>
                 Education
               </Typography>
             </Fade>
-
-            {education.map((value, index) => {
+            {education.map(({ title, description }, index) => {
               return (
-                <Accordion key={index} title={value.title} arrow={true}>
-                  {value.description}
+                <Accordion key={index} title={title} arrow={true}>
+                  {description}
                 </Accordion>
               );
             })}
+          </div>
+
+          <div className={styles.experience}>
+            <Fade bottom cascade>
+              <Typography variant='h4' style={{ marginBottom: "3rem" }}>
+                Experience
+              </Typography>
+            </Fade>
+            {experience.map(
+              ({ designation, description, company, link }, index) => {
+                return (
+                  <Accordion
+                    key={index}
+                    title={designation}
+                    arrow={true}
+                    type={company}
+                    link={link}
+                  >
+                    {description}
+                  </Accordion>
+                );
+              }
+            )}
           </div>
         </div>
       </section>

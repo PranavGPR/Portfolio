@@ -41,7 +41,11 @@ export default function Accordion({
   return (
     <div
       className={styles.accordion}
-      style={!click ? { borderColor: "transparent" } : {}}
+      style={
+        !click
+          ? { borderColor: "transparent" }
+          : { boxShadow: "0 0 1rem #007acc" }
+      }
       onClick={() => {
         setClick(!click);
       }}
