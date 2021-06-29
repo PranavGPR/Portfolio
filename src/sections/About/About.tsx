@@ -167,6 +167,10 @@ export default function About() {
                 <span className='tooltip'>Express</span>
               </span>
 
+              <span className='icon icon-jest'>
+                <span className='tooltip'>Jest</span>
+              </span>
+
               <span className='icon icon-mongodb'>
                 <span className='tooltip'>MongoDB</span>
               </span>
