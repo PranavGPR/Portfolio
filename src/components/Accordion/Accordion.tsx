@@ -70,6 +70,7 @@ export default function Accordion({
                 border: "2px solid #007acc",
                 borderRadius: "5px",
               }}
+              target_blank={true}
             >
               Repo
             </Button>
@@ -82,6 +83,7 @@ export default function Accordion({
                 border: "2px solid #007acc",
                 borderRadius: "5px",
               }}
+              target_blank={true}
             >
               Link
             </Button>

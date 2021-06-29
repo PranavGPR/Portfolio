@@ -20,6 +20,16 @@ const data = [
       "The official site of Infinite loop club of Anna University, Trichy.",
   },
   {
+    image: "fullycart.jpg",
+    type: "Featured Project",
+    title: "FullyCart",
+    stack: ["React", "Redux", "Node.js", "Express", "MongoDB"],
+    link: "https://fullycart.herokuapp.com/",
+    repo: "https://github.com/PranavGPR/FullyCart",
+    description:
+      "An E-Commerce Clothes shopping site built on React and Redux for FrontEnd, Express for Server and MongoDB for Database.",
+  },
+  {
     image: "7days50projects.jpg",
     type: "Collaborated Project",
     title: "7Days - 50Projects",
@@ -28,16 +38,6 @@ const data = [
     repo: "https://github.com/benxene/7days-50projects",
     description:
       "This is a derivative of 50days50projects which is a course consisting of 50 mini projects produced by Brad Traversy and Florin Pop. Me and my colleages designed and built it on Next JS, Styled Components and TypeScript.",
-  },
-  {
-    image: "fullycart.jpg",
-    type: "Featured Project",
-    title: "FullyCart",
-    stack: ["React", "Redux", "Express", "MongoDB"],
-    link: "https://fullycart.herokuapp.com/",
-    repo: "https://github.com/PranavGPR/FullyCart",
-    description:
-      "An E-Commerce Clothes shopping site built on React and Redux for FrontEnd, Express for Server and MongoDB for Database.",
   },
   {
     image: "zosimetech.jpg",
