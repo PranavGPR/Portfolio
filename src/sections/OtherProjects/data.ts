@@ -39,7 +39,7 @@ const extras = [
   },
   {
     title: "class-scheduler",
-    type: "Contributed Project",
+    type: "Featured Project",
     tech: "TypeScript JavaScript",
     repo: "https://github.com/benxene/class-scheduler",
     link: "https://www.npmjs.com/package/class-scheduler",
@@ -53,14 +53,6 @@ const extras = [
     link: "https://rahuldairyfarm.netlify.app/",
     description:
       "A Landing Site designed and developed for Rahul's Dairy Farm.",
-  },
-  {
-    title: "EndPolio",
-    type: "Contributed Project",
-    tech: "HTML CSS BootStrap",
-    link: "https://endpolio.netlify.app/",
-    description:
-      "A Static site designed and built for my College's Rotaract Club.",
   },
 ];
 

@@ -1,7 +1,7 @@
 const data = [
   {
     image: "bonafide-generator.jpg",
-    type: "Collaborated Project",
+    type: "Featured Project",
     title: "Bonafide Generator",
     stack: ["React", "Styled Components", "@react-pdf/renderer"],
     link: "https://bonafide-generator.netlify.app/",
@@ -11,7 +11,7 @@ const data = [
   },
   {
     image: "infinite-loop-club.jpg",
-    type: "Collaborated Project",
+    type: "Featured Project",
     title: "Infinite Loop Club Website",
     stack: ["React", "Styled Components"],
     link: "https://infinite-loop-club.netlify.app/",
@@ -41,10 +41,10 @@ const data = [
   },
   {
     image: "zosimetech.jpg",
-    type: "Collaborated Project",
+    type: "Featured Project",
     title: "Zosime Tech - Home Page",
     stack: ["HTML", "CSS"],
-    link: "https://zosimetech.tk/",
+    link: "https://zosime-tech.github.io/website/",
     description:
       "The official landing site of Zosime Tech built with the power of HTML and CSS.",
   },
