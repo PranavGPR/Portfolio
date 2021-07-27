@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className={styles.footer__container}>
       <Fade bottom cascade>
         <Typography variant='h6' style={{ marginBottom: "2rem" }}>
-          Contact me on
+          Contact me through
         </Typography>
       </Fade>
 
@@ -37,7 +37,7 @@ export default function Footer() {
 
       <Fade bottom cascade>
         <Typography variant='description' className={styles.footer__content}>
-          Copyright &#169; 2020 - 2021 <br />
+          Designed and Built by <br />
           <span className={styles.footer__content_name}>Pranav Gnanasekar</span>
         </Typography>
       </Fade>
