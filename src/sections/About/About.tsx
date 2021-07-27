@@ -158,6 +158,10 @@ export default function About() {
               <span className='tooltip'>GraphQL</span>
             </span>
 
+            <span className='icon icon-socket-dot-io'>
+              <span className='tooltip'>Socket.io</span>
+            </span>
+
             <span className='icon icon-node-dot-js'>
               <span className='tooltip'>NodeJS</span>
             </span>

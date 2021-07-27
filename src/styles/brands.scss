@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "brands";
-  src: url("fonts/brands.eot?auc5vw");
-  src: url("fonts/brands.eot?auc5vw#iefix") format("embedded-opentype"),
-    url("fonts/brands.ttf?auc5vw") format("truetype"),
-    url("fonts/brands.woff?auc5vw") format("woff"),
-    url("fonts/brands.svg?auc5vw#brands") format("svg");
+  src: url("fonts/brands.eot?imkusf");
+  src: url("fonts/brands.eot?imkusf#iefix") format("embedded-opentype"),
+    url("fonts/brands.ttf?imkusf") format("truetype"),
+    url("fonts/brands.woff?imkusf") format("woff"),
+    url("fonts/brands.svg?imkusf#brands") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -300,4 +300,7 @@
 .icon-jest:before {
   content: "\e901";
   color: #c21325;
+}
+.icon-socket-dot-io:before {
+  content: "\e902";
 }
