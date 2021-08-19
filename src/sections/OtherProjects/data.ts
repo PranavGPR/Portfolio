@@ -8,13 +8,6 @@ const extras = [
     description: "The API for Bonafide Generator.",
   },
   {
-    title: "Savory",
-    type: "Featured Project",
-    tech: "React  StyledComponents",
-    repo: "https://github.com/PranavGPR/savory",
-    description: "An Online Food-Ordering website.",
-  },
-  {
     title: "Infinite Loop Club API",
     type: "Contributed Project",
     tech: "NodeJS Express Mongoose MongoDB",
