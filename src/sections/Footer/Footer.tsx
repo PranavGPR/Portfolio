@@ -26,7 +26,7 @@ export default function Footer() {
           >
             <span className='social social-linkedin'></span>
           </a>
-          <a target='_blank' href='https://www.instagram.com/pranavgpr/'>
+          <a target='_blank' href='https://www.instagram.com/i_m_mystrix/'>
             <span className='social social-instagram'></span>
           </a>
           <a target='_blank' href='https://t.me/GPR'>
