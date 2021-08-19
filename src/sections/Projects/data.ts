@@ -20,6 +20,16 @@ const data = [
       "The official site of Infinite loop club of Anna University, Trichy.",
   },
   {
+    image: "Savory-api.jpg",
+    type: "Featured Project",
+    title: "Savory API - A food ordering API",
+    stack: ["Node.js", "Express", "MySQL", "Swagger"],
+    link: "https://savory-api.herokuapp.com/",
+    repo: "https://github.com/PranavGPR/savory-api",
+    description:
+      "The REST API backend for Savory, a food ordering app API, built on Node.js and Express with MySQL as the Database. Swagger UI is used to create documentation of the routes for this REST API.",
+  },
+  {
     image: "fullycart.jpg",
     type: "Featured Project",
     title: "FullyCart",
@@ -39,15 +49,7 @@ const data = [
     description:
       "This is a derivative of 50days50projects which is a course consisting of 50 mini projects produced by Brad Traversy and Florin Pop. Me and my colleages designed and built it on Next JS, Styled Components and TypeScript.",
   },
-  {
-    image: "zosimetech.jpg",
-    type: "Featured Project",
-    title: "Zosime Tech - Home Page",
-    stack: ["HTML", "CSS"],
-    link: "https://zosime-tech.github.io/website/",
-    description:
-      "The official landing site of Zosime Tech built with the power of HTML and CSS.",
-  },
+  
 ];
 
 export default data;
