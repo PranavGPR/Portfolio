@@ -1,56 +1,62 @@
-@import "styles/variables.scss";
-@import "styles/mixins.scss";
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+@import 'styles/animations.scss';
 
 .hero {
-  &__container {
-    height: 100vh;
-    width: 100%;
-    background-color: $color-primarybg;
-    display: flex;
-    align-items: center;
-  }
+	&__container {
+		height: 100vh;
+		width: 100%;
+		background-color: $color-primarybg;
+		display: flex;
+		align-items: center;
+	}
 
-  &__heading {
-    @include marginate;
-    line-height: 6.5rem;
-  }
+	&__heading {
+		@include marginate;
+		line-height: 6.5rem;
+	}
 
-  &__tag {
-    position: absolute;
-    bottom: 4rem;
-    right: 11rem;
-    opacity: 0.1;
+	&__tag {
+		position: absolute;
+		bottom: 4rem;
+		right: 11rem;
+		opacity: 0.1;
 
-    @include respond(tab-lan) {
-      width: 60%;
-    }
+		@include respond(tab-lan) {
+			width: 60%;
+		}
 
-    @include respond(tab-port) {
-      width: 70%;
-    }
+		@include respond(tab-port) {
+			width: 70%;
+		}
 
-    @include respond(phone) {
-      width: 90%;
-      right: 10%;
-    }
-  }
+		@include respond(phone) {
+			width: 90%;
+			right: 10%;
+		}
+	}
 
-  &__name {
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 7rem;
-      left: calc(0% + 0.5rem);
-      width: calc(100% - 1rem);
-      border: 2px solid $color-primary;
-      background-color: $color-primary;
-      border-radius: 10px;
-      box-shadow: 0 0 1rem rgba($color-primary, 1);
+	&__name {
+		position: relative;
 
-      @include respond(phone) {
-        top: 6rem;
-      }
-    }
-  }
+		&::before {
+			content: '';
+			position: absolute;
+			top: 7rem;
+			left: calc(0% + 0.3rem);
+			width: calc(100% - 1rem);
+			border: 2px solid $color-primary;
+			background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+			border-radius: 10px;
+			box-shadow: 0 0 1rem rgba($color-primary, 1);
+
+			animation-name: growHorizontal;
+			animation-duration: 1.3s;
+			animation-timing-function: cubic-bezier(0.9, 0, 0.5, 0.9);
+
+			@include respond(phone) {
+				top: 6rem;
+			}
+		}
+	}
 }

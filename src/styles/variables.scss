@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Oxygen:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Oxygen:wght@300;400;700&display=swap');
 
 // COLORS
 
 $color-primary: #007acc;
+$color-primary-light: #007acc;
+$color-primary-dark: #015d9b;
 $color-primarybg: #061018;
 $color-secondarybg: #2f2f2f;
 $color-textcolor: #ebebeb;
@@ -12,5 +14,5 @@ $color-black: #050911;
 
 // FONTS
 
-$font-primary: "Oxygen", sans-serif;
-$font-code: "Fira Code", sans-serif;
+$font-primary: 'Oxygen', sans-serif;
+$font-code: 'Fira Code', sans-serif;

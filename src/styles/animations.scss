@@ -1,27 +1,36 @@
-@import "./variables.scss";
+@import './variables.scss';
 
 @keyframes projectOverview {
-  0% {
-    transform: translateY(0);
-  }
+	0% {
+		transform: translateY(0);
+	}
 
-  50% {
-    transform: translateY(-50%);
-  }
+	50% {
+		transform: translateY(-50%);
+	}
 
-  100% {
-    transform: translateY(0);
-  }
+	100% {
+		transform: translateY(0);
+	}
 }
 
 @keyframes fillColor {
-  0% {
-    fill: $color-textcolor;
-    fill-opacity: 0;
-  }
+	0% {
+		fill: $color-textcolor;
+		fill-opacity: 0;
+	}
 
-  100% {
-    fill: $color-textcolor;
-    fill-opacity: 1;
-  }
+	100% {
+		fill: $color-textcolor;
+		fill-opacity: 1;
+	}
+}
+
+@keyframes growHorizontal {
+	from {
+		width: 0;
+	}
+	to {
+		width: calc(100% - 1rem);
+	}
 }
