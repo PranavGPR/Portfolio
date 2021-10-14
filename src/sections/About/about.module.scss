@@ -1,113 +1,145 @@
-@import "styles/variables.scss";
-@import "styles/mixins.scss";
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
 
 .about {
-  padding: 10rem 0 0;
+	padding: 10rem 0 0;
 
-  @media only screen and (max-width: 120rem) {
-    width: 100%;
-  }
-  &__container {
-    @include marginate;
-  }
+	@media only screen and (max-width: 120rem) {
+		width: 100%;
+	}
+	&__container {
+		@include marginate;
+	}
 
-  &__gridContainer {
-    display: grid;
-    grid-template-columns: minmax(min-content, 70%) minmax(30%, 1fr);
-    grid-template-rows: min-content;
-    grid-gap: 2rem;
+	&__gridContainer {
+		display: grid;
+		grid-template-columns: minmax(min-content, 70%) minmax(30%, 1fr);
+		grid-template-rows: min-content;
+		grid-gap: 2rem;
 
-    @include respond(phone-large) {
-      grid-template-columns: 100%;
-      grid-column: 1/2;
-      grid-gap: 6rem;
-    }
-  }
+		@include respond(phone-large) {
+			grid-template-columns: 100%;
+			grid-column: 1/2;
+			grid-gap: 6rem;
+		}
+	}
 
-  &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    line-height: 3rem;
-    width: 100%;
-  }
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		line-height: 3rem;
+		width: 100%;
+	}
 
-  &__image {
-    max-height: 70%;
-    align-self: center;
-    object-fit: contain;
-    box-shadow: 0 0 1rem transparent;
-    border-radius: 0.5rem;
-    transition: all 0.4s;
+	&__image {
+		max-height: 70%;
+		align-self: center;
+		object-fit: contain;
+		box-shadow: 0 0 1rem transparent;
+		border-radius: 0.5rem;
+		transition: all 0.4s;
 
-    &Container {
-      display: grid;
-      place-items: center;
+		&Container {
+			display: grid;
+			place-items: center;
 
-      @include respond(phone-large) {
-        max-height: 30rem;
-      }
-    }
+			@include respond(phone-large) {
+				max-height: 30rem;
+			}
+		}
 
-    @include respond(tab-lan) {
-      min-height: 30rem;
-      max-height: 60%;
-    }
+		@include respond(tab-lan) {
+			min-height: 30rem;
+			max-height: 60%;
+		}
 
-    @include respond(tab-port) {
-      min-height: 23rem;
-      max-height: 50%;
-    }
+		@include respond(tab-port) {
+			min-height: 23rem;
+			max-height: 50%;
+		}
 
-    @include respond(phone-large) {
-      max-height: 100%;
-      position: static;
-      transform: none;
-    }
+		@include respond(phone-large) {
+			max-height: 100%;
+			position: static;
+			transform: none;
+		}
 
-    &:hover {
-      box-shadow: 0 0 2rem rgba($color-primary, 0.8);
-    }
-  }
+		&:hover {
+			box-shadow: 0 0 2rem rgba($color-primary, 0.8);
+		}
+	}
 }
 
 .skills {
-  @include marginate;
-  padding-top: 10rem;
+	@include marginate;
+	padding-top: 10rem;
 
-  &__icons {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 4rem;
+	&__icons {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 4rem;
 
-    @include respond(phone) {
-      justify-content: space-around;
-    }
+		@include respond(phone) {
+			justify-content: space-around;
+		}
 
-    & > span {
-      display: block;
-      filter: brightness(90%);
-      cursor: grab;
-      margin: 0 2rem 2rem 0;
-      transition: all 0.2s;
+		& > span {
+			display: block;
+			filter: brightness(90%);
+			cursor: grab;
+			margin: 0 2rem 2rem 0;
+			transition: all 0.2s;
 
-      @include respond(phone) {
-        margin: 0 2rem 3rem 2rem;
-      }
+			@include respond(phone) {
+				margin: 0 2rem 3rem 2rem;
+			}
 
-      @include respond(touchscreen) {
-        filter: none;
-      }
+			@include respond(touchscreen) {
+				filter: none;
+			}
 
-      &:hover {
-        filter: brightness(110%) drop-shadow(0 0 1rem $color-primary);
-      }
-    }
-  }
+			&:hover {
+				filter: brightness(110%) drop-shadow(0 0 1rem $color-primary);
+			}
+		}
+	}
 }
 
 .education,
 .experience {
-  margin-bottom: 5rem;
+	margin-bottom: 5rem;
+}
+
+.underline_text {
+	display: inline-block;
+	transition: all 0.2s;
+	position: relative;
+	cursor: pointer;
+
+	&::after {
+		content: '';
+		display: block;
+		width: 100%;
+		transform: scaleX(0);
+		transform-origin: left;
+		border: 1px solid $color-primary;
+		background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+		border-radius: 10px;
+		box-shadow: 0 0 1rem rgba($color-primary, 1);
+		transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+		@include respond(phone) {
+			top: 6rem;
+		}
+	}
+
+	&:hover {
+		color: $color-primary;
+
+		&::after {
+			transform: scaleX(1);
+		}
+	}
 }
