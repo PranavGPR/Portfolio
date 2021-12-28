@@ -18,8 +18,9 @@
     "react-reveal": "^1.2.2"
   },
   "devDependencies": {
+    "@types/body-scroll-lock": "^3.1.0",
     "@types/node": "^14.14.16",
-    "@types/react": "^17.0.0",
+    "@types/react": "^17.0.38",
     "csstype": "^3.0.8",
     "sass": "^1.32.0",
     "ssri": ">=8.0.1",

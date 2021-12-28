@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Fade } from 'react-reveal';
+import Fade from 'react-reveal/Fade';
 
 import { Typography, Accordion, Button } from 'components';
 import styles from './about.module.scss';
@@ -20,7 +20,7 @@ export default function About() {
 
 	useEffect(() => {
 		getUser();
-	}, []);
+	}, [data]);
 
 	return (
 		<>

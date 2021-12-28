@@ -1,34 +1,34 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import { Loader, Navbar } from "components";
-import { Hero, About, Footer, Projects, OtherProjects } from "sections";
+import { Loader, Navbar } from 'components';
+import { Hero, About, Footer, Projects, OtherProjects } from 'sections';
 
 export default function Main() {
-  const [load, setLoad] = useState(true);
+	const [load, setLoad] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoad(false);
-    }, 3250);
-  }, [load]);
+	useEffect(() => {
+		setTimeout(() => {
+			setLoad(false);
+		}, 3250);
+	}, [load]);
 
-  return (
-    <>
-      {load ? (
-        <Loader />
-      ) : (
-        <>
-          <Navbar />
+	return (
+		<>
+			{load ? (
+				<Loader />
+			) : (
+				<>
+					<Navbar />
 
-          <main>
-            <Hero />
-            <About />
-            <Projects />
-            <OtherProjects />
-          </main>
-          <Footer />
-        </>
-      )}
-    </>
-  );
+					<main>
+						<Hero />
+						<About />
+						<Projects />
+						<OtherProjects />
+					</main>
+					<Footer />
+				</>
+			)}
+		</>
+	);
 }

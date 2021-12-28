@@ -1,4 +1,14 @@
-const data = [
+interface ProjectDto {
+	image: string;
+	type: string;
+	title: string;
+	stack: string[];
+	link: string;
+	description: string;
+	repo: string;
+}
+
+const data: ProjectDto[] = [
 	{
 		image: 'bonafide-generator.jpg',
 		type: 'Featured Project',
