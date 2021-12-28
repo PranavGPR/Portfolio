@@ -1,4 +1,3 @@
-import { ReactChild } from 'react';
 import { FaExternalLinkAlt, FaLink } from 'react-icons/fa';
 
 import { Typography } from '..';
@@ -16,15 +15,11 @@ interface ProjectProps {
 
 interface TechProps {
 	value: string;
-	key: number;
+	key?: number;
 }
 
-const Tech = ({ value, key }: TechProps) => {
-	return (
-		<span className={styles.project__techItem} key={key}>
-			{value}
-		</span>
-	);
+const Tech = ({ value }: TechProps): React.ReactElement => {
+	return <span className={styles.project__techItem}>{value}</span>;
 };
 
 export default function ProjectCard({
