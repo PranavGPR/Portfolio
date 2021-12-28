@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 
 import { Typography, Accordion, Button } from 'components';
 import styles from './about.module.scss';
@@ -27,11 +27,11 @@ export default function About() {
 			<section className={styles.about} id='about'>
 				<div className={styles.about__container}>
 					<section style={{ marginBottom: '5rem', width: '100%' }}>
-						<Fade bottom cascade>
+						<Fade direction='up' cascade>
 							<Typography variant='h3'>About Me</Typography>
 						</Fade>
 						<div className={styles.about__gridContainer}>
-							<Fade bottom cascade>
+							<Fade direction='up' cascade>
 								<div className={styles.about__content}>
 									<Typography variant='description'>
 										Hi, I'm Pranav. I'm a Full Stack Web Developer and a Gamer 👨🏻‍💻 from Madurai,
@@ -73,7 +73,7 @@ export default function About() {
 					</section>
 
 					<section className={styles.education}>
-						<Fade bottom cascade>
+						<Fade direction='up' cascade>
 							<Typography variant='h4' style={{ marginBottom: '3rem' }}>
 								Education
 							</Typography>
@@ -88,7 +88,7 @@ export default function About() {
 					</section>
 
 					<section className={styles.experience}>
-						<Fade bottom cascade>
+						<Fade direction='up' cascade>
 							<Typography variant='h4' style={{ marginBottom: '3rem' }}>
 								Experience
 							</Typography>
@@ -104,7 +104,7 @@ export default function About() {
 				</div>
 			</section>
 			<section id='skills' className={styles.skills}>
-				<Fade bottom cascade>
+				<Fade direction='up' cascade>
 					<Typography variant='h3' style={{ marginBottom: '3rem' }}>
 						Skills
 					</Typography>
