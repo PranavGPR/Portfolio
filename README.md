@@ -39,4 +39,4 @@ By running this command, the server runs on localhost of port 3000 on your local
 
 <img height="30" src="https://img.shields.io/badge/mit-green?style=for-the-badge&label=license" />
 
-[Portfolio]: https://realgpr.tech
+[Portfolio]: https://realgpr.me
