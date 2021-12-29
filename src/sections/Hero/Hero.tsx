@@ -1,4 +1,4 @@
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 
 import styles from './hero.module.scss';
 import { Typography } from 'components';
@@ -6,7 +6,7 @@ import { Typography } from 'components';
 export default function Hero() {
 	return (
 		<section className={styles.hero__container} id='hero'>
-			<Fade bottom cascade>
+			<Fade style={{ width: '100%' }} triggerOnce direction='up' cascade>
 				<div className={styles.hero__heading}>
 					<Typography variant='h5'>
 						Hey There!{' '}
