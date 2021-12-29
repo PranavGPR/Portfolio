@@ -1,4 +1,4 @@
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 
 import { Accordion, Typography } from 'components';
 import styles from './otherprojects.module.scss';
@@ -7,7 +7,7 @@ import otherprs from './data';
 export default function OtherProjects() {
 	return (
 		<section className={styles.otherprs}>
-			<Fade bottom cascade>
+			<Fade triggerOnce direction='up' cascade>
 				<div className={styles.otherprs__container}>
 					<Typography variant='h3' style={{ marginBottom: '5rem' }}>
 						Other Projects

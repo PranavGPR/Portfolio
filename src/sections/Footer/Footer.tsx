@@ -1,4 +1,4 @@
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 
 import { Typography } from 'components';
 import styles from './footer.module.scss';
@@ -6,13 +6,13 @@ import styles from './footer.module.scss';
 export default function Footer() {
 	return (
 		<footer className={styles.footer__container}>
-			<Fade bottom cascade>
+			<Fade triggerOnce direction='up' cascade>
 				<Typography variant='h6' style={{ marginBottom: '2rem' }}>
 					Contact me through
 				</Typography>
 			</Fade>
 
-			<Fade bottom cascade>
+			<Fade triggerOnce direction='up' cascade>
 				<div className={styles.footer__social_icons}>
 					<a target='_blank' href='mailto:pranav.gnanasekar23@gmail.com'>
 						<span className='social social-mail'></span>
@@ -32,7 +32,7 @@ export default function Footer() {
 				</div>
 			</Fade>
 
-			<Fade bottom cascade>
+			<Fade triggerOnce direction='up' cascade>
 				<Typography variant='description' className={styles.footer__content}>
 					Designed and Built by <br />
 					<span className={styles.footer__content_name}>Pranav Gnanasekar</span>

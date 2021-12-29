@@ -27,11 +27,11 @@ export default function About() {
 			<section className={styles.about} id='about'>
 				<div className={styles.about__container}>
 					<section style={{ marginBottom: '5rem', width: '100%' }}>
-						<Fade direction='up' cascade>
+						<Fade triggerOnce direction='up' cascade>
 							<Typography variant='h3'>About Me</Typography>
 						</Fade>
 						<div className={styles.about__gridContainer}>
-							<Fade direction='up' cascade style={{ display: 'flex' }}>
+							<Fade triggerOnce direction='up' cascade style={{ display: 'flex' }}>
 								<div className={styles.about__content}>
 									<Typography variant='description'>
 										Hi, I'm Pranav. I'm a Full Stack Web Developer and a Gamer 👨🏻‍💻 from Madurai,
@@ -73,38 +73,44 @@ export default function About() {
 					</section>
 
 					<section className={styles.education}>
-						<Fade direction='up' cascade>
+						<Fade triggerOnce direction='up' cascade>
 							<Typography variant='h4' style={{ marginBottom: '3rem' }}>
 								Education
 							</Typography>
+							{education.map(({ title, description }, index) => {
+								return (
+									<Accordion key={index} title={title} arrow={true}>
+										{description}
+									</Accordion>
+								);
+							})}
 						</Fade>
-						{education.map(({ title, description }, index) => {
-							return (
-								<Accordion key={index} title={title} arrow={true}>
-									{description}
-								</Accordion>
-							);
-						})}
 					</section>
 
 					<section className={styles.experience}>
-						<Fade direction='up' cascade>
+						<Fade triggerOnce direction='up' cascade>
 							<Typography variant='h4' style={{ marginBottom: '3rem' }}>
 								Experience
 							</Typography>
+							{experience.map(({ designation, description, company, link }, index) => {
+								return (
+									<Accordion
+										key={index}
+										title={designation}
+										arrow={true}
+										type={company}
+										link={link}
+									>
+										{description}
+									</Accordion>
+								);
+							})}
 						</Fade>
-						{experience.map(({ designation, description, company, link }, index) => {
-							return (
-								<Accordion key={index} title={designation} arrow={true} type={company} link={link}>
-									{description}
-								</Accordion>
-							);
-						})}
 					</section>
 				</div>
 			</section>
 			<section id='skills' className={styles.skills}>
-				<Fade direction='up' cascade>
+				<Fade triggerOnce direction='up' cascade>
 					<Typography variant='h3' style={{ marginBottom: '3rem' }}>
 						Skills
 					</Typography>
