@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { Loader, Navbar } from 'components';
+import { Loader, Navbar, ScrollToTopButton } from 'components';
 import { Hero, About, Footer, Projects, OtherProjects } from 'sections';
 
 export default function Main() {
@@ -27,6 +27,7 @@ export default function Main() {
 						<OtherProjects />
 					</main>
 					<Footer />
+					<ScrollToTopButton />
 				</>
 			)}
 		</>
