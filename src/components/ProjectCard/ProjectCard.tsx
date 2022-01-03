@@ -37,21 +37,21 @@ export default function ProjectCard({
 			<figure className={styles.project__picture}>
 				<Fade cascade triggerOnce>
 					<img src={image} alt='project_image' className={styles.project__picture_img} />
-					<figcaption className={styles.project__picture_caption}>
-						{repo && (
-							<a href={repo} target='_blank'>
-								<FaExternalLinkAlt />
-								Repo
-							</a>
-						)}
-						{link && (
-							<a href={link} target='_blank'>
-								<FaLink />
-								Link
-							</a>
-						)}
-					</figcaption>
 				</Fade>
+				<figcaption className={styles.project__picture_caption}>
+					{repo && (
+						<a href={repo} target='_blank'>
+							<FaExternalLinkAlt />
+							Repo
+						</a>
+					)}
+					{link && (
+						<a href={link} target='_blank'>
+							<FaLink />
+							Link
+						</a>
+					)}
+				</figcaption>
 			</figure>
 
 			<div className={styles.project__details}>

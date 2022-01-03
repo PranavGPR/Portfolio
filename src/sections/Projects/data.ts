@@ -19,15 +19,6 @@ const data: ProjectDto[] = [
 		description: 'A MERN Stack application for a student to obtain an online bonafide certificate.'
 	},
 	{
-		image: 'infinite-loop-club.jpg',
-		type: 'Featured Project',
-		title: 'Infinite Loop Club Website',
-		stack: ['ReactJS', 'Styled Components'],
-		link: 'https://infinite-loop-club.netlify.app/',
-		repo: 'https://github.com/Infinite-Loop-Club/club-site',
-		description: 'The official site of Infinite loop club of Anna University, Trichy.'
-	},
-	{
 		image: 'Savory-api.jpg',
 		type: 'Featured Project',
 		title: 'Savory API - A food ordering API',
@@ -37,6 +28,16 @@ const data: ProjectDto[] = [
 		description:
 			'The REST API backend for Savory, a food ordering app API, built on Node.js and Express with MySQL as the Database. Swagger UI is used to create documentation of the routes for this REST API.'
 	},
+	{
+		image: 'infinite-loop-club.jpg',
+		type: 'Featured Project',
+		title: 'Infinite Loop Club Website',
+		stack: ['ReactJS', 'Styled Components'],
+		link: 'https://infinite-loop-club.netlify.app/',
+		repo: 'https://github.com/Infinite-Loop-Club/club-site',
+		description: 'The official site of Infinite loop club of Anna University, Trichy.'
+	},
+
 	{
 		image: 'fullycart.jpg',
 		type: 'Featured Project',
