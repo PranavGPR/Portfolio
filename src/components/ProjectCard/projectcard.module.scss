@@ -1,150 +1,150 @@
-@import "styles/variables.scss";
-@import "styles/mixins.scss";
-@import "styles/animations.scss";
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+@import 'styles/animations.scss';
 
 .project {
-  display: flex;
+	display: flex;
 
-  &:not(:last-child) {
-    margin-bottom: 10rem;
-  }
+	&:not(:last-child) {
+		margin-bottom: 10rem;
+	}
 
-  &:nth-child(odd) &__picture {
-    order: 1;
+	&:nth-child(odd) &__picture {
+		order: 1;
 
-    @include respond(phone-large) {
-      order: 0;
-    }
-  }
+		@include respond(phone-large) {
+			order: 0;
+		}
+	}
 
-  &:nth-child(odd) &__details {
-    padding-left: 0;
-    padding-right: 2rem;
-  }
+	&:nth-child(odd) &__details {
+		padding-left: 0;
+		padding-right: 2rem;
+	}
 
-  @include respond(phone-large) {
-    flex-direction: column;
-  }
+	@include respond(phone-large) {
+		flex-direction: column;
+	}
 
-  &__picture {
-    flex: 1 1 35%;
-    max-height: 30rem;
-    overflow-y: hidden;
-    position: relative;
-    border-radius: 0.3rem;
-    transition: all 0.3s;
+	&__picture {
+		position: relative;
+		flex: 1 1 35%;
+		max-height: 30rem;
+		overflow-y: hidden;
+		border-radius: 0.3rem;
+		transition: all 0.3s;
 
-    &_img {
-      display: block;
-      width: 100%;
-      position: relative;
-      animation-name: projectOverview;
-      animation-duration: 30s;
-      animation-iteration-count: infinite;
-      animation-timing-function: cubic-bezier(0.69, 0.63, 0.73, 1.24);
-      transition: all 0.4s;
-    }
+		&_img {
+			display: block;
+			width: 100%;
+			position: relative;
+			animation-name: projectOverview;
+			animation-duration: 30s;
+			animation-iteration-count: infinite;
+			animation-timing-function: cubic-bezier(0.69, 0.63, 0.73, 1.24);
+			transition: all 0.4s;
+		}
 
-    &_caption {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-color: rgba($color-primary, 0.2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      opacity: 0;
-      transition: all 0.3s;
+		&_caption {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: rgba($color-primary, 0.2);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			opacity: 0;
+			transition: all 0.3s;
 
-      &:hover {
-        opacity: 1;
-      }
+			&:hover {
+				opacity: 1;
+			}
 
-      & > a {
-        display: inline-flex;
-        align-items: center;
-        padding: 1.2rem;
-        border-radius: 0.3rem;
-        text-align: center;
-        background-color: rgba($color-primarybg, 0.3);
-        text-decoration: none;
-        color: $color-white;
-        font-size: 1.7rem;
-        font-weight: 700;
-        transition: all 0.3s;
+			& > a {
+				display: inline-flex;
+				align-items: center;
+				padding: 1.2rem;
+				border-radius: 0.3rem;
+				text-align: center;
+				background-color: rgba($color-primarybg, 0.3);
+				text-decoration: none;
+				color: $color-white;
+				font-size: 1.7rem;
+				font-weight: 700;
+				transition: all 0.3s;
 
-        svg {
-          margin-right: 1rem;
-        }
+				svg {
+					margin-right: 1rem;
+				}
 
-        &:not(:last-child) {
-          margin-right: 1rem;
-        }
+				&:not(:last-child) {
+					margin-right: 1rem;
+				}
 
-        &:hover {
-          background-color: rgba($color-primary, 0.75);
-          box-shadow: 0 0 1rem rgba($color-primarybg, 0.7);
-        }
-      }
-    }
-  }
+				&:hover {
+					background-color: rgba($color-primary, 0.75);
+					box-shadow: 0 0 1rem rgba($color-primarybg, 0.7);
+				}
+			}
+		}
+	}
 
-  &__picture:hover &__picture_img {
-    filter: blur(3px);
-  }
+	&__picture:hover &__picture_img {
+		filter: blur(3px);
+	}
 
-  &__details {
-    flex: 1 1 65%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    padding-left: 2rem;
+	&__details {
+		flex: 1 1 65%;
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+		padding-left: 2rem;
 
-    @include respond(phone-large) {
-      padding: 0;
-      margin-top: 3rem;
-    }
-  }
+		@include respond(phone-large) {
+			padding: 0;
+			margin-top: 3rem;
+		}
+	}
 
-  &__description {
-    margin: 1rem 0;
-    font-size: 1.6rem;
-    letter-spacing: 0.5px;
-    line-height: 3rem;
-  }
+	&__description {
+		margin: 1rem 0;
+		font-size: 1.6rem;
+		letter-spacing: 0.5px;
+		line-height: 3rem;
+	}
 
-  &__techs {
-    margin-top: auto;
-    display: flex;
-    flex-wrap: wrap;
-  }
+	&__techs {
+		margin-top: auto;
+		display: flex;
+		flex-wrap: wrap;
+	}
 
-  &__techItem {
-    margin-top: 1rem;
-    cursor: pointer;
-    font-family: $font-code;
-    font-size: 1.2rem;
-    color: $color-textcolor;
-    transform: scale(1);
-    transition: all 0.2s;
+	&__techItem {
+		margin-top: 1rem;
+		cursor: pointer;
+		font-family: $font-code;
+		font-size: 1.2rem;
+		color: $color-textcolor;
+		transform: scale(1);
+		transition: all 0.2s;
 
-    &:not(:last-child) {
-      margin-right: 3rem;
-    }
+		&:not(:last-child) {
+			margin-right: 3rem;
+		}
 
-    &:hover {
-      transform: scale(1.2);
-      color: $color-primary;
-    }
-  }
+		&:hover {
+			transform: scale(1.2);
+			color: $color-primary;
+		}
+	}
 
-  &__sub_heading {
-    font-size: 1.3rem;
-    font-weight: 700;
-    font-family: $font-code;
-    color: $color-primary;
-  }
+	&__sub_heading {
+		font-size: 1.3rem;
+		font-weight: 700;
+		font-family: $font-code;
+		color: $color-primary;
+	}
 }
