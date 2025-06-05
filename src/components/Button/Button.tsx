@@ -1,9 +1,9 @@
-import { CSSProperties, ReactChild } from 'react';
+import { CSSProperties, ReactNode } from 'react';
 import styles from './button.module.scss';
 
 interface ButtonProps {
 	href: string;
-	children: ReactChild;
+	children: ReactNode;
 	style?: CSSProperties;
 	target_blank?: boolean;
 }
