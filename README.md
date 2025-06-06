@@ -1,6 +1,6 @@
 # PortFolio
 
-This is the repository for my portfolio built with NextJS in Typescript and Sass for styling.
+This is the repository for my portfolio built with NextJS in Typescript and Sass for styling
 
 [<img height="30" src="https://img.shields.io/badge/active-green?style=for-the-badge&label=status" />][Portfolio]
 [<img height="30" src="https://img.shields.io/badge/VERCEL-blue?style=for-the-badge&logo=vercel&logoColor=black&label=deployment" />][Portfolio]
