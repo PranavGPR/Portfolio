@@ -21,7 +21,7 @@ export const education: EducationDto[] = [
 	},
 	{
 		title: 'University College of Engineering - BIT Campus',
-		description: 'Under Graduate (2018 - Present) - Trichy'
+		description: 'Under Graduate (2018 - 2022) - Trichy'
 	}
 ];
 
@@ -30,7 +30,14 @@ export const experience: ExperienceDto[] = [
 		designation: 'Frontend Developer',
 		company: 'App Town Technologies',
 		description:
-			'Worked as the Lead Frontend developer on a React project in App Town Technologies from January 2021 to February 2021.',
+			'Served as Lead Frontend Developer on a React project at App Town Technologies from January 2021 to February 2021.',
 		link: 'https://apptown.in/'
+	},
+	{
+		designation: 'Member Technical Staff',
+		company: 'Zoho Corporation',
+		description:
+			'Currently working as a Full Stack Developer at Zoho Corporation since March 2022.',
+		link: 'https://www.zoho.com'
 	}
 ];

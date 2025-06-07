@@ -1,4 +1,4 @@
-import { ReactChild, useState, useEffect, useRef } from 'react';
+import { ReactNode, useState, useEffect, useRef } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import { FaAngleRight } from 'react-icons/fa';
 
@@ -9,7 +9,7 @@ interface AccordionProps {
 	title: string;
 	type?: string;
 	tech?: string;
-	children: ReactChild;
+	children: ReactNode;
 	link?: string;
 	repo?: string;
 	arrow: boolean;
