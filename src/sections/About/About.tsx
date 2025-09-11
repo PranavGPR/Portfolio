@@ -40,7 +40,7 @@ export default function About() {
 										<br />
 										I'm currently pursuing my under graduation 👨🏻‍🎓 on Computer Science and
 										Engineering in{' '}
-										<a href='http://www.aubit.edu.in/index.htm' target='_blank'>
+										<a href='https://www.aubit.edu.in/' target='_blank'>
 											<span className={styles.underline_text}>
 												University College of Engineering - BIT Campus, Trichy
 											</span>
