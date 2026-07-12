@@ -20,7 +20,7 @@ export default function Footer() {
 					<a target='_blank' href='https://github.com/PranavGPR'>
 						<span className='social social-github'></span>
 					</a>
-					<a target='_blank' href='https://www.linkedin.com/in/pranav-g-7122111b5/'>
+					<a target='_blank' href='https://www.linkedin.com/in/pranavgpr/'>
 						<span className='social social-linkedin'></span>
 					</a>
 					<a target='_blank' href='https://www.instagram.com/i_m_mystrix/'>
